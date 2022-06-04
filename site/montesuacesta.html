@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Monte sua cesta</title>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+		<link rel="stylesheet" type="text/css" href="estilo.css">
+
+		<meta charset="utf-8">
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+	</head>
+	<body>
+
+		<nav class="navbar navbar-expand-lg ">
+			<div class="collapse navbar-collapse">
+				<ul class="navbar-nav">
+				  <li class="nav-item">
+				  <a class="navbar-brand" href="index.html">
+				    <img src="LOGO.png" alt="logo" class="rounded-circle logo">
+				  </a>
+				  </li>
+				  <li class="nav-item fundo">
+				    <h1 class="tit">HIBISCO</h1>
+				  </li>
+				</ul>
+			</div>
+			<div class="divlogcad">
+				<ul>
+					<li class="navbar-nav">
+				  	<a class="btn btn-dark botaocad" href="cadastro.html" role="button">Cadastre-se</a>
+				  </li>
+				  	<li class="navbar-nav">
+				  	<a class="btn btn-dark botaolog" href="login.html" role="button">Login</a>
+				  </li>
+				</ul>
+			</div>
+		</nav>			
+			<nav class="navbar sticky-top navbar-expand-lg navbar-light home">
+			  <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
+			    <ul class="navbar-nav">
+			      <li class="nav-item menu rounded">
+			        <a class="nav-link text-body" href="index.html">HOME</a>
+			      </li>
+			      <li class="nav-item menu rounded">
+			        <a class="nav-link text-body" href="sobrenos.html">SOBRE NÓS</a>
+			      </li>
+			      <li class="nav-item menu rounded">
+			        <a class="nav-link text-body" href="tiposdeflores.html">TIPOS DE FLORES</a>
+			      </li>
+			      <li class="nav-item menu rounded">
+			        <a class="nav-link text-body" href="cestas.html">CESTAS</a>
+			      </li>
+			      <li class="nav-item menu rounded">
+			        <a class="nav-link text-body" href="buques.html">BUQUÊS</a>
+			      </li>
+			      <li class="nav-item dropdown menu rounded">
+			        <a class="nav-link dropdown-toggle text-body" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="cursor:pointer"> MONTE SEU PRESENTE
+			        </a>
+			        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+			          <a class="dropdown-item" href="monteseubuque.html">Buquês</a>
+			          <a class="dropdown-item" href="montesuacesta.html">Cestas</a> 
+			        </div>
+			         <li class="nav-item menu rounded">
+			        <a class="nav-link text-body" href="eventos.html">EVENTOS</a>
+			      </li>
+			      <li class="nav-item menu rounded">
+			        <a class="nav-link text-body" href="orcamento.html">ORÇAMENTO</a>
+			      </li>
+			      </li>
+			    </ul>
+			  </div>
+			</nav>
+
+			<div class= "div"><br>
+				<h2>Monte sua cesta</h2><br>
+
+				<div class="row">
+				  <div class="col-2">
+				    <div class="list-group" id="list-tab" role="tablist">
+				      <a class="list-group-item list-group-item-action btn btn-success active" id="list-cestas-list" data-toggle="list" href="#list-cestas" role="tab" aria-controls="cestas">Cestas</a>
+				       <a class="list-group-item list-group-item-action btn btn-success" id="list-chocolate-list" data-toggle="list" href="#list-chocolate" role="tab" aria-controls="chocolate">Chocolate</a>
+				      <a class="list-group-item list-group-item-action btn btn-success" id="list-pelucias-list" data-toggle="list" href="#list-pelucias" role="tab" aria-controls="pelucias">Pelúcias</a>
+				      <a class="list-group-item list-group-item-action btn btn-success" id="list-canecas-list" data-toggle="list" href="#list-canecas" role="tab" aria-controls="canecas">Canecas</a>
+				    </div>
+				  </div>
+				  
+				  <form id="montarc" action="" method="post">
+				  <div class="col-8">
+				    <div class="tab-content mp" id="nav-tabContent">
+				      <div class="tab-pane fade show active" id="list-cestas" role="tabpanel" aria-labelledby="list-cestas-list">
+				      	<div class="card-deck">
+						<div class="card" style="width: 18rem;">
+						  <img src="mpcesta1.jpg" class="card-img-top">
+						  <div class="card-body">
+						    <h5 class="card-title imghome">ARJ Cestinha de Madeira G (Cesta Matinal)</h5>
+						    <p class="card-text imghome">R$19,50</p>
+						    <input type="text" id="cesta1" name="cesta1" placeholder="Adicionar..." class="form-control">
+						  </div>
+						</div>
+
+						<div class="card" style="width: 18rem;">
+						  <img src="mpcesta2.jpg" class="card-img-top">
+						  <div class="card-body">
+						    <h5 class="card-title imghome">Cesta Palha Oval M<br><br><br></h5>
+						    <p class="card-text imghome">R$22,99</p>
+						    <input type="text" id="cesta2" name="cesta2" placeholder="Adicionar..." class="form-control">
+						  </div>
+						</div>
+
+						<div class="card" style="width: 18rem;">
+						  <img src="mpcesta3.jpg" class="card-img-top">
+						  <div class="card-body">
+						    <h5 class="card-title imghome"><br>Cesta de Vime com Alça Fundo vime 25x25<br></h5>
+						    <p class="card-text imghome">R$19,99</p>
+						    <input type="text" id="cesta3" name="cesta3" placeholder="Adicionar..." class="form-control">
+						  </div>
+						</div>
+
+						<div class="card" style="width: 18rem;">
+						  <img src="mpcesta4.jpg" class="card-img-top">
+						  <div class="card-body">
+						    <h5 class="card-title imghome">Cesta de Vime Quadrada  Fundo madeira 30 X 30</h5>
+						    <p class="card-text imghome">R$27,99</p>
+						    <input type="text" id="cesta4" name="cesta4" placeholder="Adicionar..." class="form-control">
+						  </div>
+						</div>
+						</div>
+				      </div>
+				       <div class="tab-pane fade" id="list-chocolate" role="tabpanel" aria-labelledby="list-chocolate-list">
+				      	<div class="card-deck">
+						<div class="card" style="width: 18rem;">
+						  <img src="mpcestachoco1.jpg" class="card-img-top">
+						  <div class="card-body">
+						    <h5 class="card-title imghome">Ferrero Rocher 100g<br><br><br></h5>
+						    <p class="card-text imghome">R$30,90</p>
+						    <input type="text" id="choco1" name="choco1" placeholder="Adicionar..." class="form-control">
+						  </div>
+						</div>
+
+						<div class="card" style="width: 18rem;">
+						  <img src="mpcestachoco2.jpg" class="card-img-top">
+						  <div class="card-body">
+						    <h5 class="card-title imghome">Kit com 3 Barras de Chocolate Milka Oreo<br><br></h5>
+						    <p class="card-text imghome">R$18,99</p>
+						   <input type="text" id="choco2" name="choco2" placeholder="Adicionar..." class="form-control">
+						  </div>
+						</div>
+
+						<div class="card" style="width: 18rem;">
+						  <img src="mpcestachoco3.jpg" class="card-img-top">
+						  <div class="card-body">
+						    <h5 class="card-title imghome">Brigadeiro de Colher 40g<br><br></h5>
+						    <p class="card-text imghome">R$14,99</p>
+						    <input type="text" id="choco3" name="choco3" placeholder="Adicionar..." class="form-control">
+						  </div>
+						</div>
+
+						<div class="card" style="width: 18rem;">
+						  <img src="mpcestachoco4.jpg" class="card-img-top">
+						  <div class="card-body">
+						    <h5 class="card-title imghome">Chocolate Talento Castanha do Pará 90g com 3 Unidade</h5>
+						    <p class="card-text imghome">R$17,99</p>
+						    <input type="text" id="choco4" name="choco4" placeholder="Adicionar..." class="form-control">
+						  </div>
+						</div>
+						</div>
+						<br>
+						<div class="card-deck">
+						<div class="card" style="width: 18rem;">
+						  <img src="mpcestachoco5.jpg" class="card-img-top">
+						  <div class="card-body">
+						    <h5 class="card-title imghome">Kit Kat 41,5g ao Leite<br><br></h5>
+						    <p class="card-text imghome">R$4,99</p>
+						    <input type="text" id="choco5" name="choco5" placeholder="Adicionar..." class="form-control">
+						  </div>
+						</div>
+
+						<div class="card" style="width: 18rem;">
+						  <img src="mpcestachoco6.jpg" class="card-img-top">
+						  <div class="card-body">
+						    <h5 class="card-title imghome">Brigadeiro com Crispie</h5>
+						    <p class="card-text imghome">R$34,99</p>
+						    <input type="text" id="choco6" name="choco6" placeholder="Adicionar..." class="form-control">
+						  </div>
+						</div>
+
+						<div class="card" style="width: 18rem;">
+						  <img src="mpcestachoco7.jpg" class="card-img-top">
+						  <div class="card-body">
+						    <h5 class="card-title imghome">Biscoito Oreo 90g 2 Unidades</h5>
+						    <p class="card-text imghome">R$7,99</p>
+						    <input type="text" id="choco7" name="choco7" placeholder="Adicionar..." class="form-control">
+						  </div>
+						</div>
+
+						<div class="card" style="width: 18rem;">
+						  <img src="mpcestachoco8.jpg" class="card-img-top">
+						  <div class="card-body">
+						    <h5 class="card-title imghome">Bolinho Bauducco 40g</h5>
+						    <p class="card-text imghome">R$2,99</p>
+						    <input type="text" id="choco8" name="choco8" placeholder="Adicionar..." class="form-control">
+						  </div>
+						</div>
+						</div>
+						</div>
+						 <div class="tab-pane fade" id="list-pelucias" role="tabpanel" aria-labelledby="list-pelucias-list">
+				      	<div class="card-deck">
+						<div class="card" style="width: 18rem;">
+						  <img src="mpcestape1.jpg" class="card-img-top">
+						  <div class="card-body">
+						    <h5 class="card-title imghome"><br><br>Cachorro Dengoso<br><br></h5>
+						    <p class="card-text imghome">R$29,90</p>
+						    <input type="text" id="pe1" name="pe1" placeholder="Adicionar..." class="form-control">
+						  </div>
+						</div>
+
+						<div class="card" style="width: 18rem;">
+						  <img src="mpcestape2.jpg" class="card-img-top">
+						  <div class="card-body">
+						    <h5 class="card-title imghome"><br><br>Ursinho Leleco<br><br></h5>
+						    <p class="card-text imghome">R$34,99</p>
+						    <input type="text" id="pe2" name="pe2" placeholder="Adicionar..." class="form-control">
+						  </div>
+						</div>
+
+						<div class="card" style="width: 18rem;">
+						  <img src="mpcestape3.jpg" class="card-img-top">
+						  <div class="card-body">
+						    <h5 class="card-title imghome"><br><br>Emoji Apaixonado<br><br></h5>
+						    <p class="card-text imghome">R$30,90</p>
+						    <input type="text" id="pe3" name="pe3" placeholder="Adicionar..." class="form-control">
+						  </div>
+						</div>
+
+						<div class="card" style="width: 18rem;">
+						  <img src="mpcestape4.jpg" class="card-img-top" width="auto" height="245px">
+						  <div class="card-body">
+						    <h5 class="card-title imghome">Pelúcia Mickey Mouse</h5>
+						    <p class="card-text imghome">R$24,99</p>
+						    <input type="text" id="pe4" name="pe4" placeholder="Adicionar..." class="form-control">
+						  </div>
+						</div>
+						</div>
+						<br>
+						<div class="card-deck">
+						<div class="card" style="width: 18rem;">
+						  <img src="mpcestape5.jpg" class="card-img-top">
+						  <div class="card-body">
+						    <h5 class="card-title imghome">Pelúcia Minnie Mouse<br><br></h5>
+						    <p class="card-text imghome">R$24,99</p>
+						    <input type="text" id="pe5" name="pe5" placeholder="Adicionar..." class="form-control">
+						  </div>
+						</div>
+
+						<div class="card" style="width: 18rem;">
+						  <img src="mpcestape6.jpg" class="card-img-top">
+						  <div class="card-body">
+						    <h5 class="card-title imghome">Pelúcia Bob Esponja<br><br></h5>
+						    <p class="card-text imghome">R$24,99</p>
+						    <input type="text" id="pe6" name="pe6" placeholder="Adicionar..." class="form-control">
+						  </div>
+						</div>
+
+						<div class="card" style="width: 18rem;">
+						  <img src="mpcestape7.jpg" class="card-img-top">
+						  <div class="card-body">
+						    <h5 class="card-title imghome">Ursinho Eu Te Amo<br><br></h5>
+						    <p class="card-text imghome">R$29,99</p>
+						    <input type="text" id="pe7" name="pe7" placeholder="Adicionar..." class="form-control">
+						  </div>
+						</div>
+
+						<div class="card" style="width: 18rem;">
+						  <img src="mpcestape8.jpg" class="card-img-top">
+						  <div class="card-body">
+						    <h5 class="card-title imghome">Pelúcia Coração<br><br></h5>
+						    <p class="card-text imghome">R$19,99</p>
+						    <input type="text" id="pe8" name="pe8" placeholder="Adicionar..." class="form-control">
+						  </div>
+						</div>
+						</div>
+						</div>
+
+				      	<div class="tab-pane fade" id="list-canecas" role="tabpanel" aria-labelledby="list-canecas-list">
+				      	<div class="card-deck">
+						<div class="card" style="width: 18rem;">
+						  <img src="mpcestaca1.jpg" class="card-img-top">
+						  <div class="card-body">
+						    <h5 class="card-title imghome">Caneca Coruja<br><br></h5>
+						    <p class="card-text imghome">R$19,99</p>
+						    <input type="text" id="ca1" name="ca1" placeholder="Adicionar..." class="form-control">
+						  </div>
+						</div>
+
+						<div class="card" style="width: 18rem;">
+						  <img src="mpcestaca2.jpg" class="card-img-top">
+						  <div class="card-body">
+						    <h5 class="card-title imghome">Caneca Corações<br><br></h5>
+						    <p class="card-text imghome">R$19,99</p>
+						    <input type="text" id="ca2" name="ca2" placeholder="Adicionar..." class="form-control">
+						  </div>
+						</div>
+
+						<div class="card" style="width: 18rem;">
+						  <img src="mpcestaca3.jpg" class="card-img-top">
+						  <div class="card-body">
+						    <h5 class="card-title imghome">Caneca Simpsons<br><br></h5>
+						    <p class="card-text imghome">R$24,99</p>
+						    <input type="text" id="ca3" name="ca3" placeholder="Adicionar..." class="form-control">
+						  </div>
+						</div>
+
+						<div class="card" style="width: 18rem;">
+						  <img src="mpcestaca4.jpg" class="card-img-top">
+						  <div class="card-body">
+						    <h5 class="card-title imghome">Caneca Mickey Mouse</h5>
+						    <p class="card-text imghome">R$29,99</p>
+						    <input type="text" id="ca4" name="ca4" placeholder="Adicionar..." class="form-control">
+						  </div>
+						</div>
+						</div>
+						<br>
+						<div class="card-deck">
+						<div class="card" style="width: 18rem;">
+						  <img src="mpcestaca5.jpg" class="card-img-top">
+						  <div class="card-body">
+						    <h5 class="card-title imghome">Caneca Darth Vader<br><br></h5>
+						    <p class="card-text imghome">R$24,99</p>
+						    <input type="text" id="ca5" name="ca5" placeholder="Adicionar..." class="form-control">
+						  </div>
+						</div>
+
+						<div class="card" style="width: 18rem;">
+						  <img src="mpcestaca6.jpg" class="card-img-top">
+						  <div class="card-body">
+						    <h5 class="card-title imghome">Caneca Linguagens<br><br></h5>
+						    <p class="card-text imghome">R$24,99</p>
+						    <input type="text" id="ca6" name="ca6" placeholder="Adicionar..." class="form-control">
+						  </div>
+						</div>
+
+						<div class="card" style="width: 18rem;">
+						  <img src="mpcestaca7.jpg" class="card-img-top" >
+						  <div class="card-body">
+						    <h5 class="card-title imghome">Caneca Vermelha<br><br></h5>
+						    <p class="card-text imghome">R$19,99</p>
+						    <input type="text" id="ca7" name="ca7" placeholder="Adicionar..." class="form-control">
+						  </div>
+						</div>
+
+						<div class="card" style="width: 18rem;">
+						  <img src="mpcestaca8.jpg" class="card-img-top">
+						  <div class="card-body">
+						    <h5 class="card-title imghome">Caneca Rosa Cromada</h5>
+						    <p class="card-text imghome">R$22,99</p>
+						    <input type="text" id="ca8" name="ca8" placeholder="Adicionar..." class="form-control">
+						  </div>
+						</div>
+						</div>
+				      </div>
+				    </div>
+				  </div>
+				</form>
+				</div>
+				<br>
+				<input type="submit" id="calcular" class="btn btn-success calcular" name="calcular" value="Calcular">
+				<br><br>
+				<div id="resposta" class="result">
+			
+				</div>
+				<br><br>
+			</div>
+
+			<nav class="navbar navbar-expand-lg fimpag">
+			<div class="collapse navbar-collapse">
+				<div class="contatos">
+    				<ol class="nav-item">
+    					<h5>Contatos</h5>
+    				</ol>
+    				<ol class="nav-item">
+    					<p>(11) 4002-8922</p>
+    				</ol>
+    				<ol>
+    					<p>Rua Lauro Gomes, 506 <br> São Bernardo do Campo, SP</p>
+    				</ol>
+    				<ol>
+    					<p>hibiscocontato@gmail.com</p>
+    				</ol>
+    		</div>
+    		<div class="rsociais">
+    			<ol>
+    				<h5>Redes Sociais</h5>
+    			</ol>
+    			<ol>
+    				<ul class="navbar-nav">
+    				<img src="instagramlogo.png" width="40" height="40">
+    				<ul>
+    				<p>@hibiscoflores</p>
+    			</ol>
+    			<ol>
+    				<ul class="navbar-nav">
+    				<img src="facebooklogo.png" width="40" height="40">
+    				<ul>
+    				<p>Hibisco Flores</p>
+    			</ol>
+    		</div>
+    		<div class="fpag">
+    			
+    			<ol class="nav-item">
+    				<h5>Formas de Pagamento</h5>
+    			</ol>
+    			<ul class="navbar-nav">
+    			<ol class="nav-item">
+    				<img src="paypallogo.png" width="40" height="30">
+    			</ol>
+    			<ol class="nav-item">
+    				<img src="elologo.png" width="80" height="30">
+    			</ol>
+    			<ol class="nav-item">
+    				<img src="visalogo.png" width="110" height="30">
+    			</ol>
+    			<ul>
+    		</div>
+  			</div>
+		</nav>	
+	</body>
+</html>
+<script>
+	   $(document).ready(function() {
+        
+        $('#calcular').click(function() {
+ 
+            var dados = $('#montarc').serialize();
+ 
+            $.ajax({
+                method: 'POST',
+                url: 'montar2.php',
+                data: dados,
+                
+                
+                beforeSend: function() {
+                  $("#resposta").html("Carregando...");
+
+                }
+            })
+
+            .done(function(msg){
+              $("#resposta").html(msg);
+              
+
+            })
+
+            .fail(function(){
+              alert("Falha no resultado!");
+            })
+
+            return false;
+      });
+
+    });
+</script>

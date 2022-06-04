@@ -1,0 +1,149 @@
+body{
+	background-image: url(fundo.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	width:auto;
+}
+.logo{
+	background-color: white;
+	margin-left: 300px;
+	width:170px;
+	height:130px;
+	border: solid black 1px;
+
+}
+.fundo{
+	background-color: #66ccff;
+	width: 500px;
+	height: 100px;
+	margin-top: 20px;
+	border: solid black 1px;
+}
+.botaocad{
+	color: black;
+	background-color: #ff66b3;
+	font-family: Tekton Pro;
+	margin-bottom: 5px;
+}
+.botaolog{
+	color: black;
+	background-color: #ff66b3;
+	font-family: Tekton Pro;
+	margin-left: 49px;
+	margin-top: 5px;
+}
+.divlogcad{
+	margin-right: 90px;
+	margin-top: 15px;
+}
+.tit{
+	font-family: Tekton Pro;
+	font-size: 80px;
+	text-align: center;
+	margin-top: 10px;
+}
+.home{
+	background-color: #66ccff;	
+	border: solid black 1px;
+	margin-left: 105px;
+	margin-right: 105px;
+	width:auto;
+	height: 65px;
+	padding-bottom: 1px;
+}
+.menu{
+	font-family: Tekton Pro;
+	font-size: 23px;
+	color: black;
+}
+.menu:hover {
+  	background-color: #ff66b3;
+ 	width: auto;
+  	height: 45px;
+}
+.div{
+	background-color: white;
+	margin-left: 105px;
+	margin-right: 105px;
+	width:auto;
+	height: auto;
+	padding-right: 10px;
+	padding-left:10px;
+}
+.fimpag{
+	background-color: #66ccff;
+	margin-left: 105px;
+	margin-right: 105px;
+	width:auto;
+	height: auto;
+	border: solid black 1px;
+}
+.contatos{
+	width: 250px;
+	height: 180px;
+}
+.rsociais{	
+	width: 240px;
+	height: 180px;
+}
+.fpag{
+	width: 250px;
+	height: 180px;
+}
+.imghome{
+	text-align: center;
+	font-family: arial;
+	font-size: 17px;
+}
+h2{
+	font-family: arial; 
+	font-weight: bold;
+}
+label{
+	font-family: arial;
+	font-weight: bold;
+}
+.forms{
+	padding: 10px;
+}
+.botoescad{
+	background-color:#d966ff;
+}
+.card1{
+	border: none;
+}
+.mp{
+	width: 925px;
+	height: auto;
+}
+.calcular{
+	font-size: 25px;
+	float: right;
+	font-weight: bold;
+}
+.result{
+	text-align: center;
+	font-size: 25px;
+	font-weight: bold;
+}
+.imgs{
+	width: 250px;
+	height:250px;
+}
+.botoestf{
+	display: inline-block;
+	color: green;
+}
+.botoestf a.active{
+  background-color: green;
+  color: white;
+}
+.botoescompra{
+	display: inline-block;
+	width: 218px;
+	height: auto;
+	font-weight: bold;
+}
+.botoescompra:hover{
+	box-shadow: 0 8px 16px 0 rgba(0,0,999,0.2), 0 6px 20px 0 rgba(0,0,555,0.19);
+}

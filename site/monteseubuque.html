@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Monte seu buquê</title>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+		<link rel="stylesheet" type="text/css" href="estilo.css">
+
+		<meta charset="utf-8">
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+	</head>
+	<body>
+
+		<nav class="navbar navbar-expand-lg ">
+			<div class="collapse navbar-collapse">
+				<ul class="navbar-nav">
+				  <li class="nav-item">
+				  <a class="navbar-brand" href="index.html">
+				    <img src="LOGO.png" alt="logo" class="rounded-circle logo">
+				  </a>
+				  </li>
+				  <li class="nav-item fundo">
+				    <h1 class="tit">HIBISCO</h1>
+				  </li>
+				</ul>
+			</div>
+			<div class="divlogcad">
+				<ul>
+					<li class="navbar-nav">
+				  	<a class="btn btn-dark botaocad" href="cadastro.html" role="button">Cadastre-se</a>
+				  </li>
+				  	<li class="navbar-nav">
+				  	<a class="btn btn-dark botaolog" href="login.html" role="button">Login</a>
+				  </li>
+				</ul>
+			</div>
+		</nav>			
+			<nav class="navbar sticky-top navbar-expand-lg navbar-light home">
+			  <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
+			    <ul class="navbar-nav">
+			      <li class="nav-item menu rounded">
+			        <a class="nav-link text-body" href="index.html">HOME</a>
+			      </li>
+			      <li class="nav-item menu rounded">
+			        <a class="nav-link text-body" href="sobrenos.html">SOBRE NÓS</a>
+			      </li>
+			      <li class="nav-item menu rounded">
+			        <a class="nav-link text-body" href="tiposdeflores.html">TIPOS DE FLORES</a>
+			      </li>
+			      <li class="nav-item menu rounded">
+			        <a class="nav-link text-body" href="cestas.html">CESTAS</a>
+			      </li>
+			      <li class="nav-item menu rounded">
+			        <a class="nav-link text-body" href="buques.html">BUQUÊS</a>
+			      </li>
+			      <li class="nav-item dropdown menu rounded">
+			        <a class="nav-link dropdown-toggle text-body" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="cursor:pointer"> MONTE SEU PRESENTE
+			        </a>
+			        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+			          <a class="dropdown-item" href="monteseubuque.html">Buquês</a>
+			          <a class="dropdown-item" href="montesuacesta.html">Cestas</a> 
+			        </div>
+			         <li class="nav-item menu rounded">
+			        <a class="nav-link text-body" href="eventos.html">EVENTOS</a>
+			      </li>
+			      <li class="nav-item menu rounded">
+			        <a class="nav-link text-body" href="orcamento.html">ORÇAMENTO</a>
+			      </li>
+			      </li>
+			    </ul>
+			  </div>
+			</nav>
+			
+			<div class= "div"><br>
+				<h2>Monte seu buquê</h2><br>
+
+				<div class="row">
+				  <div class="col-2">
+				    <div class="list-group" id="list-tab" role="tablist">
+				      <a class="list-group-item list-group-item-action btn btn-success active" id="list-flores-list" data-toggle="list" href="#list-flores" role="tab" aria-controls="flores">Flores</a>
+				    </div>
+				  </div>
+
+				  <form id="montarb" action="" method="post">
+				  <div class="col-8">
+				    <div class="tab-content mp" id="nav-tabContent">
+				      <div class="tab-pane fade show active" id="list-flores" role="tabpanel" aria-labelledby="list-flores-list">
+				      	<div class="card-deck">
+						<div class="card" style="width: 18rem;">
+						  <img src="mpbuque1.jpg" class="card-img-top">
+						  <div class="card-body">
+						    <h5 class="card-title imghome">Três Rosas Colombianas Vermelhas</h5>
+						    <p class="card-text imghome">R$19,99</p>
+						    <input type="text" name="flor1" id="flor1" placeholder="Adicionar..." class="form-control">
+						  </div>
+						</div>
+
+						<div class="card" style="width: 18rem;">
+						  <img src="mpbuque2.jpg" class="card-img-top">
+						  <div class="card-body">
+						    <h5 class="card-title imghome">Três Rosas Colombianas Champanhe</h5>
+						    <p class="card-text imghome">R$19,99</p>
+						    <input type="text" name="flor2" id="flor2" placeholder="Adicionar..." class="form-control">
+						  </div>
+						</div>
+
+						<div class="card" style="width: 18rem;">
+						  <img src="mpbuque3.jpg" class="card-img-top">
+						  <div class="card-body">
+						    <h5 class="card-title imghome">Três Rosas Colombianas Brancas<br><br></h5>
+						    <p class="card-text imghome">R$19,99</p>
+						   <input type="text" name="flor3" id="flor3" placeholder="Adicionar..." class="form-control">
+						  </div>
+						</div>
+
+						<div class="card" style="width: 18rem;">
+						  <img src="mpbuque4.jpg" class="card-img-top">
+						  <div class="card-body">
+						    <h5 class="card-title imghome">Três Rosas Colombianas Amarelas</h5>
+						    <p class="card-text imghome">R$19,99</p>
+						    <input type="text" name="flor4" id="flor4" placeholder="Adicionar..." class="form-control">						    
+						  </div>
+						</div>
+						</div>
+						<br>
+						<div class="card-deck">
+						<div class="card" style="width: 18rem;">
+						  <img src="mpbuque5.jpg" class="card-img-top">
+						  <div class="card-body">
+						    <h5 class="card-title imghome">Lírio Rosa - Galho com 3 Flores</h5>
+						    <p class="card-text imghome">R$4,99</p>	
+						    <input type="text" name="flor5" id="flor5" placeholder="Adicionar..." class="form-control">				    
+						  </div>
+						</div>
+
+						<div class="card" style="width: 18rem;">
+						  <img src="mpbuque6.jpg" class="card-img-top">
+						  <div class="card-body">
+						    <h5 class="card-title imghome">Lírio Branco - Galho com 3 Flores</h5>
+						    <p class="card-text imghome">R$4,99</p>	
+						    <input type="text" name="flor6" id="flor6" placeholder="Adicionar..." class="form-control">					    
+						  </div>
+						</div>
+
+						<div class="card" style="width: 18rem;">
+						  <img src="mpbuque7.jpg" class="card-img-top">
+						  <div class="card-body">
+						    <h5 class="card-title imghome">Lírio Laranja - Galho com 3 Flores</h5>
+						    <p class="card-text imghome">R$4,99</p>	
+						    <input type="text" name="flor7" id="flor7" placeholder="Adicionar..." class="form-control">					    
+						  </div>
+						</div>
+
+						<div class="card" style="width: 18rem;">
+						  <img src="mpbuque8.jpg" class="card-img-top">
+						  <div class="card-body">
+						    <h5 class="card-title imghome">Lírio Amarelo - Galho com 3 Flores</h5>
+						    <p class="card-text imghome">R$4,99</p>
+						   <input type="text" name="flor8" id="flor8" placeholder="Adicionar..." class="form-control">		    
+						  </div>
+						</div>
+						</div>
+				      </div>
+				  	</div>
+					</div>
+					</form>
+				</div>
+				<br>
+				<input type="submit" id="calcular" class="btn btn-success calcular" name="calcular" value="Calcular">
+			<br><br>
+				<div id="resposta" class="result">
+			
+				</div>
+				<br><br>
+			</div>
+
+			<nav class="navbar navbar-expand-lg fimpag">
+			<div class="collapse navbar-collapse">
+				<div class="contatos">
+    				<ol class="nav-item">
+    					<h5>Contatos</h5>
+    				</ol>
+    				<ol class="nav-item">
+    					<p>(11) 4002-8922</p>
+    				</ol>
+    				<ol>
+    					<p>Rua Lauro Gomes, 506 <br> São Bernardo do Campo, SP</p>
+    				</ol>
+    				<ol>
+    					<p>hibiscocontato@gmail.com</p>
+    				</ol>
+    		</div>
+    		<div class="rsociais">
+    			<ol>
+    				<h5>Redes Sociais</h5>
+    			</ol>
+    			<ol>
+    				<ul class="navbar-nav">
+    				<img src="instagramlogo.png" width="40" height="40">
+    				<ul>
+    				<p>@hibiscoflores</p>
+    			</ol>
+    			<ol>
+    				<ul class="navbar-nav">
+    				<img src="facebooklogo.png" width="40" height="40">
+    				<ul>
+    				<p>Hibisco Flores</p>
+    			</ol>
+    		</div>
+    		<div class="fpag">
+    			
+    			<ol class="nav-item">
+    				<h5>Formas de Pagamento</h5>
+    			</ol>
+    			<ul class="navbar-nav">
+    			<ol class="nav-item">
+    				<img src="paypallogo.png" width="40" height="30">
+    			</ol>
+    			<ol class="nav-item">
+    				<img src="elologo.png" width="80" height="30">
+    			</ol>
+    			<ol class="nav-item">
+    				<img src="visalogo.png" width="110" height="30">
+    			</ol>
+    			<ul>
+    		</div>
+  			</div>
+		</nav>
+		
+	</body>
+</html>
+<script>
+	   $(document).ready(function() {
+        
+        $('#calcular').click(function() {
+ 
+            var dados = $('#montarb').serialize();
+ 
+            $.ajax({
+                method: 'POST',
+                url: 'montar.php',
+                data: dados,
+                
+                
+                beforeSend: function() {
+                  $("#resposta").html("Carregando...");
+
+                }
+            })
+
+            .done(function(msg){
+              $("#resposta").html(msg);
+              
+
+            })
+
+            .fail(function(){
+              alert("Falha no resultado!");
+            })
+
+            return false;
+      });
+
+    });
+</script>

@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Hibisco Flores</title>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+		<link rel="stylesheet" type="text/css" href="estilo.css">
+
+		<meta charset="utf-8">
+
+	</head>
+	<body>
+
+		<nav class="navbar navbar-expand-lg ">
+			<div class="collapse navbar-collapse">
+				<ul class="navbar-nav">
+				  <li class="nav-item">
+				  <a class="navbar-brand" href="index.html">
+				    <img src="LOGO.png" alt="logo" class="rounded-circle logo">
+				  </a>
+				  </li>
+				  <li class="nav-item fundo">
+				    <h1 class="tit">HIBISCO</h1>
+				  </li>
+				</ul>
+			</div>
+			<div class="divlogcad">
+				<ul>
+					<li class="navbar-nav">
+				  	<a class="btn btn-dark botaocad" href="cadastro.html" role="button">Cadastre-se</a>
+				  </li>
+				  	<li class="navbar-nav">
+				  	<a class="btn btn-dark botaolog" href="login.html" role="button">Login</a>
+				  </li>
+				</ul>
+			</div>
+		</nav>			
+			<nav class="navbar sticky-top navbar-expand-lg navbar-light home">
+			  <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
+			    <ul class="navbar-nav">
+			      <li class="nav-item menu rounded">
+			        <a class="nav-link text-body" href="index.html">HOME</a>
+			      </li>
+			      <li class="nav-item menu rounded">
+			        <a class="nav-link text-body" href="sobrenos.html">SOBRE NÓS</a>
+			      </li>
+			      <li class="nav-item menu rounded">
+			        <a class="nav-link text-body" href="tiposdeflores.html">TIPOS DE FLORES</a>
+			      </li>
+			      <li class="nav-item menu rounded">
+			        <a class="nav-link text-body" href="cestas.html">CESTAS</a>
+			      </li>
+			      <li class="nav-item menu rounded">
+			        <a class="nav-link text-body" href="buques.html">BUQUÊS</a>
+			      </li>
+			      <li class="nav-item dropdown menu rounded">
+			        <a class="nav-link dropdown-toggle text-body" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="cursor:pointer"> MONTE SEU PRESENTE
+			        </a>
+			        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+			          <a class="dropdown-item" href="monteseubuque.html">Buquês</a>
+			          <a class="dropdown-item" href="montesuacesta.html">Cestas</a> 
+			        </div>
+			         <li class="nav-item menu rounded">
+			        <a class="nav-link text-body" href="eventos.html">EVENTOS</a>
+			      </li>
+			      <li class="nav-item menu rounded">
+			        <a class="nav-link text-body" href="orcamento.html">ORÇAMENTO</a>
+			      </li>
+			      </li>
+			    </ul>
+			  </div>
+			</nav>
+		<div class= "div"><br><br>
+
+			<h2>Eventos</h2><br>
+
+				<div class="row">
+				  <div class="col-2">
+				    <div class="list-group" id="list-tab" role="tablist">
+				      <a class="list-group-item list-group-item-action btn btn-success active" id="list-aniversarios-list" data-toggle="list" href="#list-aniversarios" role="tab" aria-controls="Aniversarios">Aniversários</a>
+				       <a class="list-group-item list-group-item-action btn btn-success" id="list-casamentos-list" data-toggle="list" href="#list-casamentos" role="tab" aria-controls="casamentos">Casamentos</a>
+				      <a class="list-group-item list-group-item-action btn btn-success" id="list-cha-list" data-toggle="list" href="#list-cha" role="tab" aria-controls="cha">Chá de Revelação</a>
+				      <a class="list-group-item list-group-item-action btn btn-success" id="list-formaturas-list" data-toggle="list" href="#list-formaturas" role="tab" aria-controls="formaturas">Formatura</a>
+				      <a class="list-group-item list-group-item-action btn btn-success" id="list-recepcoes-list" data-toggle="list" href="#list-recepcoes" role="tab" aria-controls="recepcoes">Recepções</a><br>
+				      <a class="list-group-item list-group-item-action btn btn-success" href="orcamento.html" style="color: green; font-weight: bold;">Faça seu orçamento!</a>
+				    </div>
+				  </div>
+				   <div class="tab-content mp" id="nav-tabContent">
+				    <div class="tab-pane fade show active" id="list-aniversarios" role="tabpanel" aria-labelledby="list-cestas-list">
+					 <div class="card-deck">
+					  <div class="card">
+					    <img src="aniver1.jpg" class="card-img-top">
+					    <div class="card-body">
+					      <h5 class="card-title">Festa de 2 anos</h5>
+					      <p class="card-text">Decoração com rosas coloridas.</p>
+					    </div>
+					  </div>
+					  <div class="card">
+					    <img src="aniver2.jpg" class="card-img-top">
+					    <div class="card-body">
+					      <h5 class="card-title">Festa de 70 anos</h5>
+					      <p class="card-text">Decoração com flores diversas.</p>
+					    </div>
+					  </div>
+					</div>
+					<br>
+					<div class="card-deck">
+					  <div class="card">
+					    <img src="aniver3.jpg" class="card-img-top">
+					    <div class="card-body">
+					      <h5 class="card-title">Festa de 33 anos</h5>
+					      <p class="card-text">Decoração com rosas cor de rosa e brancas.</p>
+					    </div>
+					  </div>
+					   <div class="card">
+					    <img src="aniver4.jpg" class="card-img-top">
+					    <div class="card-body">
+					      <h5 class="card-title">Festa de 25 anos</h5>
+					      <p class="card-text">Decoração com flores com tons cor de rosa, lilás e roxo.</p>
+					    </div>
+					  </div>
+					</div>
+					<br>
+					<div class="card-deck">
+					  <div class="card">
+					    <img src="aniver8.jpg" class="card-img-top">
+					    <div class="card-body">
+					      <h5 class="card-title">Festa Jardim Encantado</h5>
+					      <p class="card-text">Com árvores de flores diversas.</p>
+					    </div>
+					  </div>
+					  <div class="card">
+					    <img src="aniver6.jpg" class="card-img-top">
+					    <div class="card-body">
+					      <h5 class="card-title">Festa Princess</h5>
+					      <p class="card-text">Decoração com rosas lilás, brancas e cor de rosa</p>
+					    </div>
+					  </div>
+					</div>
+					<br>
+					<div class="card-deck">
+					  <div class="card">
+					    <img src="aniver7.jpg" class="card-img-top">
+					    <div class="card-body">
+					      <h5 class="card-title">Festa Jardim</h5>
+					      <p class="card-text">Decoração com margaridas cor de rosa e amarelas.</p>
+					    </div>
+					  </div>
+					   <div class="card">
+					    <img src="aniver5.jpg" class="card-img-top">
+					    <div class="card-body">
+					      <h5 class="card-title">Festa Fazendinha</h5>
+					      <p class="card-text">Decoração com muitas rosas cor de rosa.</p>
+					    </div>
+					  </div>
+					</div>
+					<br>
+					<div class="card-deck">
+					  <div class="card">
+					    <img src="aniver9.jpg" class="card-img-top">
+					    <div class="card-body">
+					      <h5 class="card-title">Festa 50 anos</h5>
+					      <p class="card-text">Decoração simples com girassóis e rosas.</p>
+					    </div>
+					  </div>
+					  <div class="card">
+					    <img src="aniver10.jpg" class="card-img-top">
+					    <div class="card-body">
+					      <h5 class="card-title">Festa Pequinique</h5>
+					      <p class="card-text">Decoração com margaridas brancas e amarelas.</p>
+					    </div>
+					  </div>
+					</div>
+					<br>
+					<div class="card-deck">
+					  <div class="card">
+					    <img src="aniver11.jpg" class="card-img-top">
+					    <div class="card-body">
+					      <h5 class="card-title">Festa 1 ano</h5>
+					      <p class="card-text">Decoração com flores cor vinho.</p>
+					    </div>
+					  </div>
+					   <div class="card">
+					    <img src="aniver12.jpg" class="card-img-top">
+					    <div class="card-body">
+					      <h5 class="card-title">Festa 15 anos</h5>
+					      <p class="card-text">Decoração com flores lilás, cor de rosa e roxo.</p>
+					    </div>
+					  </div>
+					</div>
+					 
+					</div>
+
+				    <div class="tab-pane fade" id="list-casamentos" role="tabpanel" aria-labelledby="list-casamentos-list">
+				    	<div class="card-deck">
+					  <div class="card">
+					    <img src="casamento1.jpg" class="card-img-top">
+					    <div class="card-body">
+					      <h5 class="card-title">Flores e Luzes</h5>
+					      <p class="card-text">Decoração com muita iluminação e rosas cor de rosa.</p>
+					    </div>
+					  </div>
+					  <div class="card">
+					    <img src="casamento4.jpg" class="card-img-top">
+					    <div class="card-body">
+					      <h5 class="card-title">Para uma mesa de bolo cor de rosa</h5>
+					      <p class="card-text">Decoração com rosas cor de rosa.</p>
+					    </div>
+					  </div>
+					</div>
+					<br>
+					<div class="card-deck">
+					  <div class="card">
+					    <img src="casamento3.jpg" class="card-img-top">
+					    <div class="card-body">
+					      <h5 class="card-title">Mesa de doces</h5>
+					      <p class="card-text">Decoração para sua mesa de doces, com flores nos tons: rosa, lilás e branca.</p>
+					    </div>
+					  </div>
+					   <div class="card">
+					    <img src="casamento2.jpg" class="card-img-top">
+					    <div class="card-body">
+					      <h5 class="card-title">Para decorar sua mesa</h5>
+					      <p class="card-text">Decoração de centro de mesa simples, usando garrafas e uma flor de sua preferência.</p>
+					    </div>
+					  </div>
+					</div>
+					<br>
+					<div class="card-deck">
+					  <div class="card">
+					    <img src="casamento8.jpg" class="card-img-top">
+					    <div class="card-body">
+					      <h5 class="card-title">Flores e velas</h5>
+					      <p class="card-text">Arranjos com belos vasos de rosas vermelhas, e velas.</p>
+					    </div>
+					  </div>
+					  <div class="card">
+					    <img src="casamento6.jpg" class="card-img-top">
+					    <div class="card-body">
+					      <h5 class="card-title">Grandeza</h5>
+					      <p class="card-text">Decoração com enormes arranjos de rosas brancas e cor de rosa.</p>
+					    </div>
+					  </div>
+					</div>
+					<br>
+					<div class="card-deck">
+					  <div class="card">
+					    <img src="casamento12.jpg" class="card-img-top">
+					    <div class="card-body">
+					      <h5 class="card-title">Para o centro de mesa</h5>
+					      <p class="card-text">Decoração em vaso gigante, com rosas e orquídeas brancas.</p>
+					    </div>
+					  </div>
+					   <div class="card">
+					    <img src="casamento5.jpg" class="card-img-top">
+					    <div class="card-body">
+					      <h5 class="card-title">Mesa do bolo</h5>
+					      <p class="card-text">Decoração com arranjos altos de rosas de diversas cores.</p>
+					    </div>
+					  </div>
+					</div>
+					<br>
+					<div class="card-deck">
+					  <div class="card">
+					    <img src="casamento9.jpg" class="card-img-top">
+					    <div class="card-body">
+					      <h5 class="card-title">Mistura de tudo</h5>
+					      <p class="card-text">Decoração com diversas flores com tons de rosa, como rosas cor de rosa e orquídeas.</p>
+					    </div>
+					  </div>
+					  <div class="card">
+					    <img src="casamento10.jpg" class="card-img-top">
+					    <div class="card-body">
+					      <h5 class="card-title">Arranjos de mesa</h5>
+					      <p class="card-text">Decoração com orquídeas e rosas.</p>
+					    </div>
+					  </div>
+					</div>
+					<br>
+					<div class="card-deck">
+					  <div class="card">
+					    <img src="casamento11.jpg" class="card-img-top">
+					    <div class="card-body">
+					      <h5 class="card-title">Tudo branco</h5>
+					      <p class="card-text">Decoração com arranjos de flores brancas.</p>
+					    </div>
+					  </div>
+					   <div class="card">
+					    <img src="casamento7.jpg" class="card-img-top">
+					    <div class="card-body">
+					      <h5 class="card-title">Para sua mesa de doces</h5>
+					      <p class="card-text">Decoração com enorme vaso de orquídeas, com diversas cores.</p>
+					    </div>
+					  </div>
+					</div>
+					<br>
+					<div class="card-deck">
+					  <div class="card">
+					    <img src="casamento13.jpg" class="card-img-top">
+					    <div class="card-body">
+					      <h5 class="card-title">Arranjos de mesa</h5>
+					      <p class="card-text">Decoração com arranjos em vasos de vidros e, rosas brancas e cor de rosa.</p>
+					    </div>
+					  </div>
+					  <div class="card">
+					    <img src="casamento14.jpg" class="card-img-top">
+					    <div class="card-body">
+					      <h5 class="card-title">Altar</h5>
+					      <p class="card-text">Decoração para altar com arranjos e um painel de flores claras.</p>
+					    </div>
+					  </div>
+					</div>
+					<br>
+					<div class="card-deck">
+					  <div class="card">
+					    <img src="casamento15.jpg" class="card-img-top">
+					    <div class="card-body">
+					      <h5 class="card-title">Para altar</h5>
+					      <p class="card-text">Decoração para corredor e altar, com rosas em tons claros, em arranjos e um belo arco.</p>
+					    </div>
+					  </div>
+					   <div class="card">
+					    <img src="casamento16.jpg" class="card-img-top">
+					    <div class="card-body">
+					      <h5 class="card-title">Para decorar</h5>
+					      <p class="card-text">Decorações de teto, com pequenos arranjos de flores, luzes e armação dourada.</p>
+					    </div>
+					  </div>
+					</div>
+					<br>
+					<div class="card-deck">
+					  <div class="card">
+					    <img src="casamento17.jpg" class="card-img-top">
+					    <div class="card-body">
+					      <h5 class="card-title">Simples e belo</h5>
+					      <p class="card-text">Decorações para pendurar, com garrafas de vidros e uma rosa vermelha, suspensas com uma corda.</p>
+					    </div>
+					  </div>
+					  <div class="card">
+					    <img src="casamento18.jpg" class="card-img-top">
+					    <div class="card-body">
+					      <h5 class="card-title">Linda e consciente</h5>
+					      <p class="card-text">Decoração para pendurar, com garrfas pet reciclável e rosas brancas.</p>
+					    </div>
+					  </div>
+					</div>
+					<br>
+					<div class="card-deck">
+					  <div class="card">
+					    <img src="casamento19.jpg" class="card-img-top">
+					    <div class="card-body">
+					      <h5 class="card-title">Para igreja</h5>
+					      <p class="card-text">Decoração com belas rosas brancas em arranjos grandiosos.</p>
+					    </div>
+					  </div>
+					   <div class="card">
+					    <img src="casamento20.jpg" class="card-img-top">
+					    <div class="card-body">
+					      <h5 class="card-title">Para igreja 2</h5>
+					      <p class="card-text">Decoração com arcos de flores na entrada e altar, pétalas no chão e luzes.</p>
+					    </div>
+					  </div>
+					</div>
+					 
+				    </div>
+
+				   <div class="tab-pane fade" id="list-cha" role="tabpanel" aria-labelledby="list-cha-list">
+					 <div class="card-deck">
+					  <div class="card">
+					    <img src="cha7.jpg" class="card-img-top">
+					    <div class="card-body">
+					      <h5 class="card-title">Dando um toque</h5>
+					      <p class="card-text">Decoração com arranjos de flores brancas.</p>
+					    </div>
+					  </div>
+					  <div class="card">
+					    <img src="cha2.jpg" class="card-img-top">
+					    <div class="card-body">
+					      <h5 class="card-title">Rosa e Azul</h5>
+					      <p class="card-text">Decoração com flores nas cores, rosa e azul.</p>
+					    </div>
+					  </div>
+					</div>
+					<br>
+					<div class="card-deck">
+					  <div class="card">
+					    <img src="cha3.jpg" class="card-img-top">
+					    <div class="card-body">
+					      <h5 class="card-title">Tudo misturado</h5>
+					      <p class="card-text">Decoração com vasos, que contêm rosas azuis, cor de rosa e brancas.</p>
+					    </div>
+					  </div>
+					   <div class="card">
+					    <img src="cha4.jpg" class="card-img-top">
+					    <div class="card-body">
+					      <h5 class="card-title">Diferente</h5>
+					      <p class="card-text">Decoração com flores cor de rosa, azuis e amarelas.</p>
+					    </div>
+					  </div>
+					</div>
+					<br>
+					<div class="card-deck">
+					  <div class="card">
+					    <img src="cha5.png" class="card-img-top">
+					    <div class="card-body">
+					      <h5 class="card-title">Ursinhos</h5>
+					      <p class="card-text">Decoração com flores diversas, nas cores azul, rosa e branco.</p>
+					    </div>
+					  </div>
+					  <div class="card">
+					    <img src="cha6.jpg" class="card-img-top">
+					    <div class="card-body">
+					      <h5 class="card-title">Lindo e simples</h5>
+					      <p class="card-text">Decoração simples com um arranjo cor de rosa e outro azul.</p>
+					    </div>
+					  </div>
+					</div>
+					<br>
+					<div class="card-deck">
+					  <div class="card">
+					    <img src="cha1.jpg" class="card-img-top">
+					    <div class="card-body">
+					      <h5 class="card-title">Decoração simples</h5>
+					      <p class="card-text">Decoração usando garrafas pintadas, com uma rosa azul, e flores menores cor de rosa.</p>
+					    </div>
+					  </div>
+					   <div class="card">
+					    <img src="cha8.jpg" class="card-img-top">
+					    <div class="card-body">
+					      <h5 class="card-title">Clássico</h5>
+					      <p class="card-text">Decoração com rosas cor de rosa e azuis.</p>
+					    </div>
+					  </div>
+					</div>
+				   </div>
+
+				   <div class="tab-pane fade" id="list-formaturas" role="tabpanel" aria-labelledby="list-formaturas-list">
+					 <div class="card-deck">
+					  <div class="card">
+					    <img src="formatura1.jpg" class="card-img-top">
+					    <div class="card-body">
+					      <h5 class="card-title">Grandes como seu felicidade</h5>
+					      <p class="card-text">Decoração com grandes arranjos para sua mesa de doces, com rosas de diversas cores.</p>
+					    </div>
+					  </div>
+					  <div class="card">
+					    <img src="formatura2.jpg" class="card-img-top">
+					    <div class="card-body">
+					      <h5 class="card-title">Grandioso</h5>
+					      <p class="card-text">Decoração com grandes arranjos para sua mesa de doces, com flores de diversas cores.</p>
+					    </div>
+					  </div>
+					</div>
+					<br>
+					<div class="card-deck">
+					  <div class="card">
+					    <img src="formatura3.jpg" class="card-img-top">
+					    <div class="card-body">
+					      <h5 class="card-title">Duplamente grandioso</h5>
+					      <p class="card-text">Decoração com quatro grandes arranjos, com flores diversas.</p>
+					    </div>
+					  </div>
+					   <div class="card">
+					    <img src="formatura4.jpg" class="card-img-top">
+					    <div class="card-body">
+					      <h5 class="card-title">Para o grande momento</h5>
+					      <p class="card-text">Decoração com tapete vermelhos e arranjos altos diversos.</p>
+					    </div>
+					  </div>
+					</div>
+					<br>
+					<div class="card-deck">
+					  <div class="card">
+					    <img src="formatura5.jpg" class="card-img-top">
+					    <div class="card-body">
+					      <h5 class="card-title">Para a festa</h5>
+					      <p class="card-text">Decoração com flores brancas.</p>
+					    </div>
+					  </div>
+					  <div class="card">
+					    <img src="formatura6.jpg" class="card-img-top">
+					    <div class="card-body">
+					      <h5 class="card-title">Elegante</h5>
+					      <p class="card-text">Decoração com flores brancas e rosas brancas.</p>
+					    </div>
+					  </div>
+					</div>
+					<br>
+					<div class="card-deck">
+					  <div class="card">
+					    <img src="formatura7.jpg" class="card-img-top">
+					    <div class="card-body">
+					      <h5 class="card-title">Mesas</h5>
+					      <p class="card-text">decoração com pequenos arranjos e flores brancas.</p>
+					    </div>
+					  </div>
+					   <div class="card">
+					    <img src="formatura8.jpg" class="card-img-top">
+					    <div class="card-body">
+					      <h5 class="card-title">Entrada</h5>
+					      <p class="card-text">decoração para entrada do salão com margaridas amarelas.</p>
+					    </div>
+					  </div>
+					</div>
+				   </div>
+
+				   <div class="tab-pane fade" id="list-recepcoes" role="tabpanel" aria-labelledby="list-recepcoes-list">
+					 <div class="card-deck">
+					  <div class="card">
+					    <img src="rece1.jpg" class="card-img-top">
+					    <div class="card-body">
+					      <h5 class="card-title">Enormes</h5>
+					      <p class="card-text">Decoração de grandes arranjos de flores variadas.</p>
+					    </div>
+					  </div>
+					  <div class="card">
+					    <img src="rece2.jpg" class="card-img-top">
+					    <div class="card-body">
+					      <h5 class="card-title">Mesa de doces</h5>
+					      <p class="card-text">Decoração com grandes vasos de flores diversas e misturadas.</p>
+					    </div>
+					  </div>
+					</div>
+					<br>
+					<div class="card-deck">
+					  <div class="card">
+					    <img src="rece3.jpg" class="card-img-top">
+					    <div class="card-body">
+					      <h5 class="card-title">Discreto</h5>
+					      <p class="card-text">Decoração para mesas de canto, com rosas brancas.</p>
+					    </div>
+					  </div>
+					   <div class="card">
+					    <img src="rece4.jpg" class="card-img-top">
+					    <div class="card-body">
+					      <h5 class="card-title">Flores iluminadas</h5>
+					      <p class="card-text">Decoração com muita luz e arranjos de flores amarelas.</p>
+					    </div>
+					  </div>
+					</div>
+					<br>
+					<div class="card-deck">
+					  <div class="card">
+					    <img src="rece8.png" class="card-img-top">
+					    <div class="card-body">
+					      <h5 class="card-title">Poucas Flores</h5>
+					      <p class="card-text">Decoração com rosas.</p>
+					    </div>
+					  </div>
+					  <div class="card">
+					    <img src="rece6.jpg" class="card-img-top">
+					    <div class="card-body">
+					      <h5 class="card-title">Mesa de convidados</h5>
+					      <p class="card-text">Decoração com flores coloridas.</p>
+					    </div>
+					  </div>
+					</div>
+					<br>
+					<div class="card-deck">
+					  <div class="card">
+					    <img src="rece7.jpg" class="card-img-top">
+					    <div class="card-body">
+					      <h5 class="card-title">Centro de mesa</h5>
+					      <p class="card-text">Decoração com pequenos arranjos de flores brancas.</p>
+					    </div>
+					  </div>
+					   <div class="card">
+					    <img src="rece5.jpg" class="card-img-top">
+					    <div class="card-body">
+					      <h5 class="card-title">Red</h5>
+					      <p class="card-text">Decoração com arranjos de flores vermelhas em vasos.</p>
+					    </div>
+					  </div>
+					</div>
+					</div>
+				   
+			</div>
+			</div>
+		<br><br>
+		</div>
+		<nav class="navbar navbar-expand-lg fimpag">
+			<div class="collapse navbar-collapse">
+				<div class="contatos">
+    				<ol class="nav-item">
+    					<h5>Contatos</h5>
+    				</ol>
+    				<ol class="nav-item">
+    					<p>(11) 4002-8922</p>
+    				</ol>
+    				<ol>
+    					<p>Rua Lauro Gomes, 506 <br> São Bernardo do Campo, SP</p>
+    				</ol>
+    				<ol>
+    					<p>hibiscocontato@gmail.com</p>
+    				</ol>
+    		</div>
+    		<div class="rsociais">
+    			<ol>
+    				<h5>Redes Sociais</h5>
+    			</ol>
+    			<ol>
+    				<ul class="navbar-nav">
+    				<img src="instagramlogo.png" width="40" height="40">
+    				<ul>
+    				<p>@hibiscoflores</p>
+    			</ol>
+    			<ol>
+    				<ul class="navbar-nav">
+    				<img src="facebooklogo.png" width="40" height="40">
+    				<ul>
+    				<p>Hibisco Flores</p>
+    			</ol>
+    		</div>
+    		<div class="fpag">
+    			
+    			<ol class="nav-item">
+    				<h5>Formas de Pagamento</h5>
+    			</ol>
+    			<ul class="navbar-nav">
+    			<ol class="nav-item">
+    				<img src="paypallogo.png" width="40" height="30">
+    			</ol>
+    			<ol class="nav-item">
+    				<img src="elologo.png" width="80" height="30">
+    			</ol>
+    			<ol class="nav-item">
+    				<img src="visalogo.png" width="110" height="30">
+    			</ol>
+    			<ul>
+    		</div>
+  			</div>
+		</nav>
+		
+	</body>
+</html>

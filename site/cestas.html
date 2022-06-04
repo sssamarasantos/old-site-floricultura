@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Cestas</title>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+		<link rel="stylesheet" type="text/css" href="estilo.css">
+
+		<meta charset="utf-8">
+
+	</head>
+	<body>
+
+		<nav class="navbar navbar-expand-lg ">
+			<div class="collapse navbar-collapse">
+				<ul class="navbar-nav">
+				  <li class="nav-item">
+				  <a class="navbar-brand" href="index.html">
+				    <img src="LOGO.png" alt="logo" class="rounded-circle logo">
+				  </a>
+				  </li>
+				  <li class="nav-item fundo">
+				    <h1 class="tit">HIBISCO</h1>
+				  </li>
+				</ul>
+			</div>
+			<div class="divlogcad">
+				<ul>
+					<li class="navbar-nav">
+				  	<a class="btn btn-dark botaocad" href="cadastro.html" role="button">Cadastre-se</a>
+				  </li>
+				  	<li class="navbar-nav">
+				  	<a class="btn btn-dark botaolog" href="login.html" role="button">Login</a>
+				  </li>
+				</ul>
+			</div>
+		</nav>			
+			<nav class="navbar sticky-top navbar-expand-lg navbar-light home">
+			  <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
+			    <ul class="navbar-nav">
+			      <li class="nav-item menu rounded">
+			        <a class="nav-link text-body" href="index.html">HOME</a>
+			      </li>
+			      <li class="nav-item menu rounded">
+			        <a class="nav-link text-body" href="sobrenos.html">SOBRE NÓS</a>
+			      </li>
+			      <li class="nav-item menu rounded">
+			        <a class="nav-link text-body" href="tiposdeflores.html">TIPOS DE FLORES</a>
+			      </li>
+			      <li class="nav-item menu rounded">
+			        <a class="nav-link text-body" href="cestas.html">CESTAS</a>
+			      </li>
+			      <li class="nav-item menu rounded">
+			        <a class="nav-link text-body" href="buques.html">BUQUÊS</a>
+			      </li>
+			      <li class="nav-item dropdown menu rounded">
+			        <a class="nav-link dropdown-toggle text-body" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="cursor:pointer"> MONTE SEU PRESENTE
+			        </a>
+			        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+			          <a class="dropdown-item" href="monteseubuque.html">Buquês</a>
+			          <a class="dropdown-item" href="montesuacesta.html">Cestas</a> 
+			        </div>
+			         <li class="nav-item menu rounded">
+			        <a class="nav-link text-body" href="eventos.html">EVENTOS</a>
+			      </li>
+			      <li class="nav-item menu rounded">
+			        <a class="nav-link text-body" href="orcamento.html">ORÇAMENTO</a>
+			      </li>
+			      </li>
+			    </ul>
+			  </div>
+			</nav>
+		<div class= "div" style="background-color: #fbfdfd;"><br>
+			<h2>Cestas</h2>
+			<br>
+			<div class="card-deck">
+				<div class="card card1" style="width: 18rem;">
+				  <img src="cestas1.jpg" class="card-img-top imgs">
+				  <div class="card-body">
+				    <h5 class="card-title imghome">Cesta de Café da Manhã Bon Jour para Ela</h5>
+				    <p class="card-text imghome">R$149,99</p>
+				     <button type="button" class="btn btn-link" data-toggle="modal" data-target="#cesta1">+detalhes</button>
+				    <a href="login.html" class="btn btn-light botoescompra">Comprar</a>
+				  </div>
+				</div>
+
+				<div class="card card1" style="width: 18rem;">
+				  <img src="cestas2.jpg" class="card-img-top imgs">
+				  <div class="card-body">
+				    <h5 class="card-title imghome">Cesta de Café da Manhã Bom Dia</h5>
+				    <p class="card-text imghome">R$199,99</p>
+				     <button type="button" class="btn btn-link" data-toggle="modal" data-target="#cesta2">+detalhes</button>
+				    <a href="login.html" class="btn btn-light botoescompra">Comprar</a>
+				  </div>
+				</div>
+
+				<div class="card card1" style="width: 18rem;">
+				  <img src="cestas3.jpg" class="card-img-top imgs">
+				  <div class="card-body">
+				    <h5 class="card-title imghome">Cesta Luxo Harmonia<br><br></h5>
+				    <p class="card-text imghome">R$195,99</p>
+				     <button type="button" class="btn btn-link" data-toggle="modal" data-target="#cesta3">+detalhes</button>
+				    <a href="login.html" class="btn btn-light botoescompra">Comprar</a>
+				  </div>
+				</div>
+
+				<div class="card card1" style="width: 18rem;">
+				  <img src="cestas4.jpg" class="card-img-top imgs">
+				  <div class="card-body">
+				    <h5 class="card-title imghome">Raios de Sol Para Ela<br><br></h5>
+				    <p class="card-text imghome">R$229,99</p>
+				     <button type="button" class="btn btn-link" data-toggle="modal" data-target="#cesta4">+detalhes</button>
+				    <a href="login.html" class="btn btn-light botoescompra">Comprar</a>
+				  </div>
+				</div>
+				</div>
+				<br>
+			  	<div class="card-deck">
+				<div class="card card1" style="width: 18rem;">
+				  <img src="cestas5.jpg" class="card-img-top imgs">
+				  <div class="card-body">
+				    <h5 class="card-title imghome">Cesta de Café da Manhã Bom Dia</h5>
+				    <p class="card-text imghome">R$199,99</p>
+				     <button type="button" class="btn btn-link" data-toggle="modal" data-target="#cesta5">+detalhes</button>
+				    <a href="login.html" class="btn btn-light botoescompra">Comprar</a>
+				  </div>
+				</div>
+
+				<div class="card card1" style="width: 18rem;">
+				  <img src="cestas6.jpg" class="card-img-top imgs">
+				  <div class="card-body">
+				    <h5 class="card-title imghome">Cesta de Café da Manhã Bon Jour para Ele</h5>
+				    <p class="card-text imghome">R$399,99</p>
+				     <button type="button" class="btn btn-link" data-toggle="modal" data-target="#cesta6">+detalhes</button>
+				    <a href="login.html" class="btn btn-light botoescompra">Comprar</a>
+				  </div>
+				</div>
+
+				<div class="card card1" style="width: 18rem;">
+				  <img src="cestas7.jpg" class="card-img-top imgs">
+				  <div class="card-body">
+				    <h5 class="card-title imghome">Luxo Doce Dia<br><br></h5>
+				    <p class="card-text imghome">R$249,99</p>
+				     <button type="button" class="btn btn-link" data-toggle="modal" data-target="#cesta7">+detalhes</button>
+				    <a href="login.html" class="btn btn-light botoescompra">Comprar</a>
+				  </div>
+				</div>
+
+				<div class="card card1" style="width: 18rem;">
+				  <img src="cestas8.jpg" class="card-img-top imgs">
+				  <div class="card-body">
+				    <h5 class="card-title imghome">Cesta de Café da Manhã Luxo</h5>
+				    <p class="card-text imghome">R$299,99</p>
+				     <button type="button" class="btn btn-link" data-toggle="modal" data-target="#cesta8">+detalhes</button>
+				    <a href="login.html" class="btn btn-light botoescompra">Comprar</a>
+				  </div>
+				</div>
+				</div>
+				<br>
+			  	<div class="card-deck">
+				<div class="card card1" style="width: 18rem;">
+				  <img src="cestas9.jpg" class="card-img-top imgs">
+				  <div class="card-body">
+				    <h5 class="card-title imghome">Cesta de Café da Manhã Completa</h5>
+				    <p class="card-text imghome">R$279,99</p>
+				    <button type="button" class="btn btn-link" data-toggle="modal" data-target="#cesta9">+detalhes</button>
+				    <a href="login.html" class="btn btn-light botoescompra">Comprar</a>
+				  </div>
+				</div>
+
+				<div class="card card1" style="width: 18rem;">
+				  <img src="cestas10.jpg" class="card-img-top imgs">
+				  <div class="card-body">
+				    <h5 class="card-title imghome">Cesta de Chocolates Doçura</h5>
+				    <p class="card-text imghome">R$194,99</p>
+				    <button type="button" class="btn btn-link" data-toggle="modal" data-target="#cesta10">+detalhes</button>
+				    <a href="login.html" class="btn btn-light botoescompra">Comprar</a>
+				  </div>
+				</div>
+
+				<div class="card card1" style="width: 18rem;">
+				  <img src="cestas11.jpg" class="card-img-top imgs">
+				  <div class="card-body">
+				    <h5 class="card-title imghome">Despertar<br><br></h5>
+				    <p class="card-text imghome">R$449,99</p>
+				    <button type="button" class="btn btn-link" data-toggle="modal" data-target="#cesta11">+detalhes</button>
+				    <a href="login.html" class="btn btn-light botoescompra">Comprar</a>
+				  </div>
+				</div>
+
+				<div class="card card1" style="width: 18rem;">
+				  <img src="cestas12.jpg" class="card-img-top imgs">
+				  <div class="card-body">
+				    <h5 class="card-title imghome">Cesta Emoções<br><br></h5>
+				    <p class="card-text imghome">R$404,99</p>
+				    <button type="button" class="btn btn-link" data-toggle="modal" data-target="#cesta12">+detalhes</button>
+				    <a href="login.html" class="btn btn-light botoescompra">Comprar</a>
+				  </div>
+				</div>
+				</div>
+				<br>
+			  	<div class="card-deck">
+				<div class="card card1" style="width: 18rem;">
+				  <img src="cestas13.jpg" class="card-img-top imgs">
+				  <div class="card-body">
+				    <h5 class="card-title imghome">Caixa Fábrica dos Chocolates</h5>
+				    <p class="card-text imghome">R$198,99</p>
+				     <button type="button" class="btn btn-link" data-toggle="modal" data-target="#cesta13">+detalhes</button>
+				    <a href="login.html" class="btn btn-light botoescompra">Comprar</a>
+				  </div>
+				</div>
+
+				<div class="card card1" style="width: 18rem;">
+				  <img src="cestas14.jpg" class="card-img-top imgs">
+				  <div class="card-body">
+				    <h5 class="card-title imghome">Kit de Presentes Felicidades</h5>
+				    <p class="card-text imghome">R$99,99<br><br></p>
+				    <button type="button" class="btn btn-link" data-toggle="modal" data-target="#cesta14">+detalhes</button>
+				    <a href="login.html" class="btn btn-light botoescompra">Comprar</a>
+				  </div>
+				</div>
+
+				<div class="card card1" style="width: 18rem;">
+				  <img src="cestas15.jpg" class="card-img-top imgs">
+				  <div class="card-body">
+				    <h5 class="card-title imghome">Cesta Presente Love Chocolate Lindt</h5>
+				    <p class="card-text imghome">R$99,99</p>
+				    <button type="button" class="btn btn-link" data-toggle="modal" data-target="#cesta15">+detalhes</button>
+				    <a href="login.html" class="btn btn-light botoescompra">Comprar</a>
+				  </div>
+				</div>
+
+				<div class="card card1" style="width: 18rem;">
+				  <img src="cestas16.jpg" class="card-img-top imgs">
+				  <div class="card-body">
+				    <h5 class="card-title imghome">Cesta com Chocolates<br><br></h5>
+				    <p class="card-text imghome">R$39,99</p>
+				    <button type="button" class="btn btn-link" data-toggle="modal" data-target="#cesta16">+detalhes</button>
+				    <a href="login.html" class="btn btn-light botoescompra">Comprar</a>
+				  </div>
+				</div>
+				</div>
+
+				<!-- Janela 1 -->
+				<div class="modal fade" id="cesta1" tabindex="0" role="dialog" aria-labelledby="cesta1" aria-hidden="true">
+				  <div class="modal-dialog modal-dialog-scrollable" role="document">
+				    <div class="modal-content">
+				      <div class="modal-header">
+				        <h5 class="modal-title" id="cesta1">Sobre o Produto</h5>
+				        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				          <span aria-hidden="true">&times;</span></button>
+				      </div>
+				      <div class="modal-body">
+				      	<h6>Sobre o produto:</h6>
+				        <p>4 Rosas Colombianas; <br>-3 Gérberas Vermelhas; <br>-1 Sachê de Café; <br>-1 Achocolatado; <br>-1 Capuccino; <br>-2 Sachês de açúcar; <br>-2 Bolachas doces; <br>-2 Bolachas salgadas; <br>-1 Bolinho; <br>-1 Iogurte de Mel; <br>-2 Manteigas 10g; <br>-1 Patê importado; <br>-1 Pacote com Mini Panini; <br>-1 Maçã; <br>-1 Cesta; <br>-1 Embalagem para Viagem.</p>
+				      </div>
+				      <div class="modal-footer">
+				        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+				      </div>
+				    </div>
+				  </div>
+				</div>
+				<!-- Janela 2 -->
+				<div class="modal fade" id="cesta2" tabindex="-1" role="dialog" aria-labelledby="cesta2" aria-hidden="true">
+				  <div class="modal-dialog modal-dialog-scrollable" role="document">
+				    <div class="modal-content">
+				      <div class="modal-header">
+				        <h5 class="modal-title" id="cesta2">Sobre o Produto</h5>
+				        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				          <span aria-hidden="true">&times;</span></button>
+				      </div>
+				      <div class="modal-body">
+				      	<h6>Sobre o produto:</h6>
+				        <p>-02 Sachê Café 2g;<br> -01 Mini Panini 100g;<br> -01 Achocolatado 200ml;<br> -02 Açúcar 5g;<br> -01 Água de Coco 200ml;<br> -01 Alfajor 60g;<br> -01 Cesta de Vime G c/ Alça;<br> -01 Barrinha de Cereal 20g;<br> -01 Biscoito Belvita ao Leite com Aveia 90g;<br> -02 Bolacha Doce 15g;<br> -02 Bolacha Salgada 7g;<br> -02 Bolinho 30g;<br> -01 Bule;<br> -01 Cacho de Uva Itália;<br> -01 Café Com Leite 200g;<br> -01 Cappuccinos 20g;<br> -01 Confeito de Chocolate M&M ;<br> -03 Geleia 10g;<br> -01 Geleia Importada 42g;<br> -01 Iogurte Mel 170g;<br> -01 Maçã Fuji;<br> -01 Mamão Papaya;<br> -03 Manteigas 15g;<br> -03 Melzinhos 10g;<br> -01 Patê importado 100g;<br> -01 Pera;<br> -01 Polenguinho 4 unid;<br> -01 Queijo Prato Fatiado 144g;<br> -01 Rolinho Waffer 55g;<br> -01 Salgadinho Sortido 24g;<br> -01 Suco 200ml;<br> -01 Sucrilhos 25g;<br> -02 Torrada Levemente Salgada 15g;<br> -01 Waffer 30g;<br> -01 Xícara com Pires Branca.</p>
+				      </div>
+				      <div class="modal-footer">
+				        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+				      </div>
+				    </div>
+				  </div>
+				</div>
+				<!-- Janela 3 -->
+				<div class="modal fade" id="cesta3" tabindex="-1" role="dialog" aria-labelledby="cesta3" aria-hidden="true">
+				  <div class="modal-dialog modal-dialog-scrollable" role="document">
+				    <div class="modal-content">
+				      <div class="modal-header">
+				        <h5 class="modal-title" id="cesta3">Sobre o Produto</h5>
+				        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				          <span aria-hidden="true">&times;</span></button>
+				      </div>
+				      <div class="modal-body">
+				      	<h6>Sobre o produto:</h6>
+				        <p>-bolinho;<br> -geléias;<br> -iogurte;<br> -Sucrilhos;<br> -panini;<br> -conjunto de xícara e pires;<br> -uvas;<br> -Polenguinho;<br> -café;<br> -Leite Ninho;<br> -suco de laranja e mel;<br> -cesta de vime.</p>
+				      </div>
+				      <div class="modal-footer">
+				        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+				      </div>
+				    </div>
+				  </div>
+				</div>
+				<!-- Janela 4 -->
+				<div class="modal fade" id="cesta4" tabindex="-1" role="dialog" aria-labelledby="cesta4" aria-hidden="true">
+				  <div class="modal-dialog modal-dialog-scrollable" role="document">
+				    <div class="modal-content">
+				      <div class="modal-header">
+				        <h5 class="modal-title" id="cesta4">Sobre o Produto</h5>
+				        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				          <span aria-hidden="true">&times;</span></button>
+				      </div>
+				      <div class="modal-body">
+				      	<h6>Sobre o produto:</h6>
+				        <p>-café;<br> -panini;<br> -bolachas;<br> -bolinhos;<br> -cappuccino;<br> -frutas;<br> -iogurte;<br> -patê;<br> -queijo;<br> -suco;<br> -sucrilhos;<br> -torradas;<br> -mel;<br> -geléi;<br> -uma linda xícara.</p>
+				      </div>
+				      <div class="modal-footer">
+				        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+				      </div>
+				    </div>
+				  </div>
+				</div>
+				<!-- Janela 5 -->
+				<div class="modal fade" id="cesta5" tabindex="-1" role="dialog" aria-labelledby="cesta5" aria-hidden="true">
+				  <div class="modal-dialog modal-dialog-scrollable" role="document">
+				    <div class="modal-content">
+				      <div class="modal-header">
+				        <h5 class="modal-title" id="cesta5">Sobre o Produto</h5>
+				        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				          <span aria-hidden="true">&times;</span></button>
+				      </div>
+				      <div class="modal-body">
+				      	<h6>Sobre o produto:</h6>
+				        <p>-1 Rosas Colombianas;<br>-1 Sucrilhos 25g;<br>-2 Biscoitos Recheados 20g;<br>-2 Bolachas Salgadas 7g;<br>-1 Bolinho 40g;<br>-2 Bolachas Doce 15g;<br>-1 Suco de Soja;<br>-1 Biscoito Bon Gouter Sabor Queijo 100g;<br>-Acabamento em laços de fitas de cetim vermelha;<br>-Embalagem para Viagem.</p>
+				      </div>
+				      <div class="modal-footer">
+				        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+				      </div>
+				    </div>
+				  </div>
+				</div>
+				<!-- Janela 6 -->
+				<div class="modal fade" id="cesta6" tabindex="-1" role="dialog" aria-labelledby="cesta6" aria-hidden="true">
+				  <div class="modal-dialog modal-dialog-scrollable" role="document">
+				    <div class="modal-content">
+				      <div class="modal-header">
+				        <h5 class="modal-title" id="cesta6">Sobre o Produto</h5>
+				        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				          <span aria-hidden="true">&times;</span></button>
+				      </div>
+				      <div class="modal-body">
+				      	<h6>Sobre o produto:</h6>
+				        <p>-3 Gérberas Brancas;<br>-5 Murtas;<br>-5 Rosas Brancas;<br>-1 Maça Fuji;<br>-1 Mini Panini;<br>-1 Patê Importado;<br>-2 Bolachas Salgadas;<br>-1 Bolinho;<br>-2 Açúcares;<br>-2 Bolachas Doces;<br>-2 Manteigas;<br>-1 Iogurte Mel;<br>-1 Sachê Café;<br>-1 Cesta Carnauba Trançada;<br>-Embalagem para Viagem.</p>
+				      </div>
+				      <div class="modal-footer">
+				        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+				      </div>
+				    </div>
+				  </div>
+				</div>
+				<!-- Janela 7 -->
+				<div class="modal fade" id="cesta7" tabindex="-1" role="dialog" aria-labelledby="cesta7" aria-hidden="true">
+				  <div class="modal-dialog modal-dialog-scrollable" role="document">
+				    <div class="modal-content">
+				      <div class="modal-header">
+				        <h5 class="modal-title" id="cesta7">Sobre o Produto</h5>
+				        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				          <span aria-hidden="true">&times;</span></button>
+				      </div>
+				      <div class="modal-body">
+				      	<h6>Sobre o produto:</h6>
+				        <p>-3 Gérberas Amarelas;<br>-5 Astromélias Amarelas;<br>-1 Sucrilhos;<br>-1 Biscoito Bauducco Cookies;<br>-1 Leite em Pó Ninho Instantaneo;<br>-1 Biscoito Piraque Gergelim;<br>-1 Geleia Importada;<br>-1 Suco;<br>-2 Bolinhos;<br>-2 Açúcares;<br>-2 Melzinho;<br>-2 Geleia;<br>-2 Sachê Café;<br>-2 Cappuccinos-1 Iorgurte Mel;<br>-2 Torradas Levemente Salgadas;<br>-1 Alfajor;<br>-1 Cesta de Vime Redondo;<br>-Embalagem para Viagem.</p>
+				      </div>
+				      <div class="modal-footer">
+				        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+				      </div>
+				    </div>
+				  </div>
+				</div>
+				<!-- Janela 8 -->
+				<div class="modal fade" id="cesta8" tabindex="-1" role="dialog" aria-labelledby="cesta8" aria-hidden="true">
+				  <div class="modal-dialog modal-dialog-scrollable" role="document">
+				    <div class="modal-content">
+				      <div class="modal-header">
+				        <h5 class="modal-title" id="cesta8">Sobre o Produto</h5>
+				        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				          <span aria-hidden="true">&times;</span></button>
+				      </div>
+				      <div class="modal-body">
+				      	<h6>Sobre o produto:</h6>
+				        <p>-4 Gérberas Vermelhas;<br>-2 Murtas;<br>-2 Juncos;<br>-2 Sachê Chás Sortidos;<br>-2 Bombom Quadrados com Listra;<br>-1 Sucrilhos;<br>-1 Mamão Papaya;<br>-1 Maça Fuji;<br>-1 Bolo;<br>-1 Biscoito Piraque Gergelim;<br>-1 Biscoito Waffer Chocolate;<br>-1 Uva Crinsson;<br>-1 Suco;<br>-2 Bolachas Salgadas;<br>-4 Açucares;<br>-1 Melzinho;<br>-1 Geleia;<br>-2 Manteigas;<br>-2 Sachês de Café;<br>-1 Achocolatado;<br>-1 Mini Panini;<br>-1 Barrinha de Cereal;<br>-1 Iogurte Mel;<br>-2 Torradas Levemente Salgadas;<br>-1 Alfajor;<br>-Embalagem para Viagem.</p>
+				      </div>
+				      <div class="modal-footer">
+				        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+				      </div>
+				    </div>
+				  </div>
+				</div>
+				<!-- Janela 9 -->
+				<div class="modal fade" id="cesta9" tabindex="-1" role="dialog" aria-labelledby="cesta9" aria-hidden="true">
+				  <div class="modal-dialog modal-dialog-scrollable" role="document">
+				    <div class="modal-content">
+				      <div class="modal-header">
+				        <h5 class="modal-title" id="cesta9">Sobre o Produto</h5>
+				        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				          <span aria-hidden="true">&times;</span></button>
+				      </div>
+				      <div class="modal-body">
+				      	<h6>Sobre o produto:</h6>
+				        <p>-1 Cacho Uva;<br>-1 Snacks Crocantes Sabor Queijo 100g;<br>-1 Biscoito ao Leite com Aveia 90g;<br>-1 Geléia Importada;<br>-2 Cappuccinos 20g;<br>-2 Cookies 19G;<br>-1 Ferrero Rocher 180g.</p>
+				      </div>
+				      <div class="modal-footer">
+				        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+				      </div>
+				    </div>
+				  </div>
+				</div>
+				<!-- Janela 10 -->
+				<div class="modal fade" id="cesta10" tabindex="-1" role="dialog" aria-labelledby="cesta10" aria-hidden="true">
+				  <div class="modal-dialog modal-dialog-scrollable" role="document">
+				    <div class="modal-content">
+				      <div class="modal-header">
+				        <h5 class="modal-title" id="cesta10">Sobre o Produto</h5>
+				        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				          <span aria-hidden="true">&times;</span></button>
+				      </div>
+				      <div class="modal-body">
+				      	<h6>Sobre o produto:</h6>
+				        <p>-1 Margaridinha Branca Plantada;<br>-2 Suflair;<br>-3 Confeito de Chocolate M&M;<br>-1 Chocolate Biss;<br>-1 Cesta Carnauba Trançada;<br>-Embalagem para Viagem.</p>
+				      </div>
+				      <div class="modal-footer">
+				        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+				      </div>
+				    </div>
+				  </div>
+				</div>
+				<!-- Janela 11 -->
+				<div class="modal fade" id="cesta11" tabindex="-1" role="dialog" aria-labelledby="cesta11" aria-hidden="true">
+				  <div class="modal-dialog modal-dialog-scrollable" role="document">
+				    <div class="modal-content">
+				      <div class="modal-header">
+				        <h5 class="modal-title" id="cesta11">Sobre o Produto</h5>
+				        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				          <span aria-hidden="true">&times;</span></button>
+				      </div>
+				      <div class="modal-body">
+				      	<h6>Sobre o produto:</h6>
+				        <p>-1 sachê de café-4 mini panini 100g;<br>-1 achocolatado;<br>-2 sachês de açúcar;<br>-1 água de coco;<br>-1 alfajor;<br>-2 bolachas doces;<br>-2 bolachas salgadas;<br>-2 bolinhos;<br>-1 cacho de uva;<br>-1 cappuccino;<br>-2 geléias;<br>-1 iogurte;<br>-1 maçã;<br>-2 manteigas;<br>-1 patê de frango e ervas finas Bunel 100g;<br>-1 pêra;<br>-1 queijo prato fatiado 144g;<br>-1 suco 200ml;<br>-1 sucrilhos 25g;<br>-1 torrada 15g;<br>-2 waffer 40g;<br>-1 xícara com pires.</p>
+				      </div>
+				      <div class="modal-footer">
+				        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+				      </div>
+				    </div>
+				  </div>
+				</div>
+				<!-- Janela 12 -->
+				<div class="modal fade" id="cesta12" tabindex="-1" role="dialog" aria-labelledby="cesta12" aria-hidden="true">
+				  <div class="modal-dialog modal-dialog-scrollable" role="document">
+				    <div class="modal-content">
+				      <div class="modal-header">
+				        <h5 class="modal-title" id="cesta12">Sobre o Produto</h5>
+				        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				          <span aria-hidden="true">&times;</span></button>
+				      </div>
+				      <div class="modal-body">
+				      	<h6>Sobre o produto:</h6>
+				        <p>-1 Cacho de uva<br>-1 Maçã;<br>-1 Margaridinha plantada branca;<br>-1 Pêra;<br>-1 Pão francês;<br>-1 Vinho Espumante Miolo 750ml;<br>-2 Taças de Vinho;<br>-1 Pelucia Caramelo;<br>-1 Queijo Provolone;<br>-1 Queijo tipo Gouda;<br>-1 Queijo Estepe;<br>-1 Queijo Grana cuore.</p>
+				      </div>
+				      <div class="modal-footer">
+				        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+				      </div>
+				    </div>
+				  </div>
+				</div>
+				<!-- Janela 13 -->
+				<div class="modal fade" id="cesta13" tabindex="-1" role="dialog" aria-labelledby="cesta13" aria-hidden="true">
+				  <div class="modal-dialog modal-dialog-scrollable" role="document">
+				    <div class="modal-content">
+				      <div class="modal-header">
+				        <h5 class="modal-title" id="cesta13">Sobre o Produto</h5>
+				        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				          <span aria-hidden="true">&times;</span></button>
+				      </div>
+				      <div class="modal-body">
+				      	<h6>Sobre o produto:</h6>
+				        <p>-1 Rosas Colombianas<br>-3 Mini Alfajor de Cacau Havanna;<br>-2 Biscoitos Mini Snack Vicenzi;<br>-6 Bombom Unitários Lindt;<br>-2 Bem Casados;<br>-10 Balas Toff;<br>-1 Caixa de Madeira;<br>-Embalagem para Viagem.</p>
+				      </div>
+				      <div class="modal-footer">
+				        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+				      </div>
+				    </div>
+				  </div>
+				</div>
+				<!-- Janela 14 -->
+				<div class="modal fade" id="cesta14" tabindex="-1" role="dialog" aria-labelledby="cesta14" aria-hidden="true">
+				  <div class="modal-dialog modal-dialog-scrollable" role="document">
+				    <div class="modal-content">
+				      <div class="modal-header">
+				        <h5 class="modal-title" id="cesta14">Sobre o Produto</h5>
+				        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				          <span aria-hidden="true">&times;</span></button>
+				      </div>
+				      <div class="modal-body">
+				      	<h6>Sobre o produto:</h6>
+				        <p>-1 Rosa Holambra Champanhe;-2 Bem casado;<br>-1 Bolinho;<br>-Caixa com 4 Divisórias;<br>-Embalagem para Viagem.</p>
+				      </div>
+				      <div class="modal-footer">
+				        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+				      </div>
+				    </div>
+				  </div>
+				</div>
+				<!-- Janela 15 -->
+				<div class="modal fade" id="cesta15" tabindex="-1" role="dialog" aria-labelledby="cesta15" aria-hidden="true">
+				  <div class="modal-dialog modal-dialog-scrollable" role="document">
+				    <div class="modal-content">
+				      <div class="modal-header">
+				        <h5 class="modal-title" id="cesta15">Sobre o Produto</h5>
+				        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				          <span aria-hidden="true">&times;</span></button>
+				      </div>
+				      <div class="modal-body">
+				      	<h6>Sobre o produto:</h6>
+				        <p>-1 Rosa Encantada Vermelha; <br>-4 Bombom Unitário Lindt; <br>-1 Caixa de Madeira 2 Divisórias;<br>-Embalagem para viagem.</p>
+				      </div>
+				      <div class="modal-footer">
+				        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+				      </div>
+				    </div>
+				  </div>
+				</div>
+				<!-- Janela 16 -->
+				<div class="modal fade" id="cesta16" tabindex="-1" role="dialog" aria-labelledby="cesta16" aria-hidden="true">
+				  <div class="modal-dialog modal-dialog-scrollable" role="document">
+				    <div class="modal-content">
+				      <div class="modal-header">
+				        <h5 class="modal-title" id="cesta16">Sobre o produto</h5>
+				        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				          <span aria-hidden="true">&times;</span></button>
+				      </div>
+				      <div class="modal-body">
+				        <p>-02 Latas de Coca Cola; <br> -01 trio de chocolate Ferrero Rocher; <br> -01 pequeno buque de Astromélias.</p>
+				      </div>
+				      <div class="modal-footer">
+				        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+				      </div>
+				    </div>
+				  </div>
+				</div>
+
+
+			<br><br>
+		</div>
+		<nav class="navbar navbar-expand-lg fimpag">
+			<div class="collapse navbar-collapse">
+				<div class="contatos">
+    				<ol class="nav-item">
+    					<h5>Contatos</h5>
+    				</ol>
+    				<ol class="nav-item">
+    					<p>(11) 4002-8922</p>
+    				</ol>
+    				<ol>
+    					<p>Rua Lauro Gomes, 506 <br> São Bernardo do Campo, SP</p>
+    				</ol>
+    				<ol>
+    					<p>hibiscocontato@gmail.com</p>
+    				</ol>
+    		</div>
+    		<div class="rsociais">
+    			<ol>
+    				<h5>Redes Sociais</h5>
+    			</ol>
+    			<ol>
+    				<ul class="navbar-nav">
+    				<img src="instagramlogo.png" width="40" height="40">
+    				<ul>
+    				<p>@hibiscoflores</p>
+    			</ol>
+    			<ol>
+    				<ul class="navbar-nav">
+    				<img src="facebooklogo.png" width="40" height="40">
+    				<ul>
+    				<p>Hibisco Flores</p>
+    			</ol>
+    		</div>
+    		<div class="fpag">
+    			
+    			<ol class="nav-item">
+    				<h5>Formas de Pagamento</h5>
+    			</ol>
+    			<ul class="navbar-nav">
+    			<ol class="nav-item">
+    				<img src="paypallogo.png" width="40" height="30">
+    			</ol>
+    			<ol class="nav-item">
+    				<img src="elologo.png" width="80" height="30">
+    			</ol>
+    			<ol class="nav-item">
+    				<img src="visalogo.png" width="110" height="30">
+    			</ol>
+    			<ul>
+    		</div>
+  			</div>
+		</nav>
+		
+	</body>
+</html>

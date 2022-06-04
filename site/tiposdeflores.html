@@ -1,0 +1,837 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Hibisco Flores</title>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+		<link rel="stylesheet" type="text/css" href="estilo.css">
+
+		<meta charset="utf-8">
+
+	</head>
+	<body>
+
+		<nav class="navbar navbar-expand-lg ">
+			<div class="collapse navbar-collapse">
+				<ul class="navbar-nav">
+				  <li class="nav-item">
+				  <a class="navbar-brand" href="index.html">
+				    <img src="LOGO.png" alt="logo" class="rounded-circle logo">
+				  </a>
+				  </li>
+				  <li class="nav-item fundo">
+				    <h1 class="tit">HIBISCO</h1>
+				  </li>
+				</ul>
+			</div>
+			<div class="divlogcad">
+				<ul>
+					<li class="navbar-nav">
+				  	<a class="btn btn-dark botaocad" href="cadastro.html" role="button">Cadastre-se</a>
+				  </li>
+				  	<li class="navbar-nav">
+				  	<a class="btn btn-dark botaolog" href="login.html" role="button">Login</a>
+				  </li>
+				</ul>
+			</div>
+		</nav>			
+			<nav class="navbar sticky-top navbar-expand-lg navbar-light home">
+			  <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
+			    <ul class="navbar-nav">
+			      <li class="nav-item menu rounded">
+			        <a class="nav-link text-body" href="index.html">HOME</a>
+			      </li>
+			      <li class="nav-item menu rounded">
+			        <a class="nav-link text-body" href="sobrenos.html">SOBRE NÓS</a>
+			      </li>
+			      <li class="nav-item menu rounded">
+			        <a class="nav-link text-body" href="tiposdeflores.html">TIPOS DE FLORES</a>
+			      </li>
+			      <li class="nav-item menu rounded">
+			        <a class="nav-link text-body" href="cestas.html">CESTAS</a>
+			      </li>
+			      <li class="nav-item menu rounded">
+			        <a class="nav-link text-body" href="buques.html">BUQUÊS</a>
+			      </li>
+			      <li class="nav-item dropdown menu rounded">
+			        <a class="nav-link dropdown-toggle text-body" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="cursor:pointer"> MONTE SEU PRESENTE
+			        </a>
+			        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+			          <a class="dropdown-item" href="monteseubuque.html">Buquês</a>
+			          <a class="dropdown-item" href="montesuacesta.html">Cestas</a> 
+			        </div>
+			         <li class="nav-item menu rounded">
+			        <a class="nav-link text-body" href="eventos.html">EVENTOS</a>
+			      </li>
+			      <li class="nav-item menu rounded">
+			        <a class="nav-link text-body" href="orcamento.html">ORÇAMENTO</a>
+			      </li>
+			      </li>
+			    </ul>
+			  </div>
+			</nav>
+		<div class= "div" style="background-color: #fbfdfd;"><br>
+			<h2>Tipos de Flores</h2>
+			<br>
+			<div class="botoestf">
+			<ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+			  <li class="nav-item">
+			    <a class="btn active" id="pills-girasol-tab" data-toggle="pill" href="#pills-girassol" role="tab" aria-controls="pills-girassol" aria-selected="true">Girassol</a>
+			  </li>
+			  <li class="nav-item">
+			    <a class="btn" id="pills-lirio-tab" data-toggle="pill" href="#pills-lirio" role="tab" aria-controls="pills-lirio" aria-selected="false">Lírio</a>
+			  </li>
+			  <li class="nav-item">
+			    <a class="btn" id="pills-orquidea-tab" data-toggle="pill" href="#pills-orquidea" role="tab" aria-controls="pills-orquidea" aria-selected="false">Orquídeas</a>
+			    <li class="nav-item">
+			    <a class="btn" id="pills-ramarela-tab" data-toggle="pill" href="#pills-ramarela" role="tab" aria-controls="pills-ramarela" aria-selected="false">Rosas Amarelas</a>
+			  </li>
+			  <li class="nav-item">
+			    <a class="btn" id="pills-rbranca-tab" data-toggle="pill" href="#pills-rbranca" role="tab" aria-controls="pills-rbranca" aria-selected="false">Rosas Brancas</a>
+			  </li>
+			  <li class="nav-item">
+			    <a class="btn" id="pills-rrosa-tab" data-toggle="pill" href="#pills-rrosa" role="tab" aria-controls="pills-rrosa" aria-selected="false">Rosas Cor de Rosa</a>
+			  </li>
+			  <li class="nav-item">
+			    <a class="btn" id="pills-rvermelha-tab" data-toggle="pill" href="#pills-rvermelha" role="tab" aria-controls="pills-rvermelha" aria-selected="false">Rosas Vermelhas</a>
+			  </li>
+			  <li class="nav-item">
+			    <a class="btn" id="pills-tulipas-tab" data-toggle="pill" href="#pills-tulipas" role="tab" aria-controls="pills-tulipas" aria-selected="false">Tulipas</a>
+			  </li>
+			</ul>
+			</div>
+			<div class="tab-content" id="pills-tabContent">
+			  <div class="tab-pane fade show active" id="pills-girassol" role="tabpanel" aria-labelledby="pills-girassol-tab">
+			  	<div class="card-deck">
+				<div class="card card1" style="width: 18rem;">
+				  <img src="florgira1.jpg" class="card-img-top imgs">
+				  <div class="card-body">
+				    <h5 class="card-title imghome">Partitura Girassol<br><br></h5>
+				    <p class="card-text imghome">R$49,99</p>
+				    <a href="login.html" class="btn btn-light botoescompra">Comprar</a>
+				  </div>
+				</div>
+
+				<div class="card card1" style="width: 18rem;">
+				  <img src="florgira2.jpg" class="card-img-top imgs">
+				  <div class="card-body">
+				    <h5 class="card-title imghome">Girassóis<br><br></h5>
+				    <p class="card-text imghome">R$199,99</p>
+				    <a href="login.html" class="btn btn-light botoescompra">Comprar</a>
+				  </div>
+				</div>
+
+				<div class="card card1" style="width: 18rem;">
+				  <img src="florgira3.jpg" class="card-img-top imgs">
+				  <div class="card-body">
+				    <h5 class="card-title imghome">Dizer que te adoro com girassóis</h5>
+				    <p class="card-text imghome">R$99,99</p>
+				    <a href="login.html" class="btn btn-light botoescompra">Comprar</a>
+				  </div>
+				</div>
+
+				<div class="card card1" style="width: 18rem;">
+				  <img src="florgira4.jpg" class="card-img-top imgs">
+				  <div class="card-body">
+				    <h5 class="card-title imghome">Girassol Plantado<br><br></h5>
+				    <p class="card-text imghome">R$59,99</p>
+				    <a href="login.html" class="btn btn-light botoescompra">Comprar</a>
+				  </div>
+				</div>
+				</div>
+				<br>
+			  	<div class="card-deck">
+				<div class="card card1" style="width: 18rem;">
+				  <img src="florgira5.jpg" class="card-img-top imgs">
+				  <div class="card-body">
+				    <h5 class="card-title imghome">Girassóis no Vaso<br><br></h5>
+				    <p class="card-text imghome">R$199,99</p>
+				    <a href="login.html" class="btn btn-light botoescompra">Comprar</a>
+				  </div>
+				</div>
+
+				<div class="card card1" style="width: 18rem;">
+				  <img src="florgira6.jpg" class="card-img-top imgs">
+				  <div class="card-body">
+				    <h5 class="card-title imghome">Floratta de Girassóis<br><br></h5>
+				    <p class="card-text imghome">R$249,99</p>
+				    <a href="login.html" class="btn btn-light botoescompra">Comprar</a>
+				  </div>
+				</div>
+
+				<div class="card card1" style="width: 18rem;">
+				  <img src="florgira7.jpg" class="card-img-top imgs">
+				  <div class="card-body">
+				    <h5 class="card-title imghome">Dois Girassóis<br><br></h5>
+				    <p class="card-text imghome">R$59,99</p>
+				    <a href="login.html" class="btn btn-light botoescompra">Comprar</a>
+				  </div>
+				</div>
+
+				<div class="card card1" style="width: 18rem;">
+				  <img src="florgira8.jpg" class="card-img-top imgs">
+				  <div class="card-body">
+				    <h5 class="card-title imghome">Surpresa de Girassóis no Vaso</h5>
+				    <p class="card-text imghome">R$109,99</p>
+				    <a href="login.html" class="btn btn-light botoescompra">Comprar</a>
+				  </div>
+				</div>
+				</div>
+				<br>
+			  </div>
+			  
+			  <div class="tab-pane fade" id="pills-lirio" role="tabpanel" aria-labelledby="pills-lirio-tab">
+			  	<div class="card-deck">
+				<div class="card card1" style="width: 18rem;">
+				  <img src="florlirio1.jpg" class="card-img-top imgs">
+				  <div class="card-body">
+				    <h5 class="card-title imghome">Surpresa de Lírios Coloridos</h5>
+				    <p class="card-text imghome">R$99,99</p>
+				    <a href="login.html" class="btn btn-light botoescompra">Comprar</a>
+				  </div>
+				</div>
+
+				<div class="card card1" style="width: 18rem;">
+				  <img src="florlirio2.jpg" class="card-img-top imgs">
+				  <div class="card-body">
+				    <h5 class="card-title imghome">Surpresa de Lírios Brancos</h5>
+				    <p class="card-text imghome">R$99,99</p>
+				    <a href="login.html" class="btn btn-light botoescompra">Comprar</a>
+				  </div>
+				</div>
+
+				<div class="card card1" style="width: 18rem;">
+				  <img src="florlirio3.jpg" class="card-img-top imgs">
+				  <div class="card-body">
+				    <h5 class="card-title imghome">Surpresa de Lírios Amarelos</h5>
+				    <p class="card-text imghome">R$99,99</p>
+				    <a href="login.html" class="btn btn-light botoescompra">Comprar</a>
+				  </div>
+				</div>
+
+				<div class="card card1" style="width: 18rem;">
+				  <img src="florlirio4.jpg" class="card-img-top imgs">
+				  <div class="card-body">
+				    <h5 class="card-title imghome">Surpresa de Lírios Rosa</h5>
+				    <p class="card-text imghome">R$99,99</p>
+				    <a href="login.html" class="btn btn-light botoescompra">Comprar</a>
+				  </div>
+				</div>
+				</div>
+				<br>
+			  	<div class="card-deck">
+				<div class="card card1" style="width: 18rem;">
+				  <img src="florlirio5.jpg" class="card-img-top imgs">
+				  <div class="card-body">
+				    <h5 class="card-title imghome">Lindos Lírios Coloridos</h5>
+				    <p class="card-text imghome">R$149,99</p>
+				    <a href="login.html" class="btn btn-light botoescompra">Comprar</a>
+				  </div>
+				</div>
+
+				<div class="card card1" style="width: 18rem;">
+				  <img src="florlirio6.jpg" class="card-img-top imgs">
+				  <div class="card-body">
+				    <h5 class="card-title imghome">Lindos Lírios Brancos</h5>
+				    <p class="card-text imghome">R$149,99</p>
+				    <a href="login.html" class="btn btn-light botoescompra">Comprar</a>
+				  </div>
+				</div>
+
+				<div class="card card1" style="width: 18rem;">
+				  <img src="florlirio7.jpg" class="card-img-top imgs">
+				  <div class="card-body">
+				    <h5 class="card-title imghome">Lindos Lírios Amarelos</h5>
+				    <p class="card-text imghome">R$149,99</p>
+				    <a href="login.html" class="btn btn-light botoescompra">Comprar</a>
+				  </div>
+				</div>
+
+				<div class="card card1" style="width: 18rem;">
+				  <img src="florlirio8.jpg" class="card-img-top imgs">
+				  <div class="card-body">
+				    <h5 class="card-title imghome">Lindos Lírios Rosa</h5>
+				    <p class="card-text imghome">R$149,99</p>
+				    <a href="login.html" class="btn btn-light botoescompra">Comprar</a>
+				  </div>
+				</div>
+				</div>
+				<br>
+				<div class="card-deck">
+				<div class="card card1" style="width: 18rem;">
+				  <img src="florlirio9.jpg" class="card-img-top imgs">
+				  <div class="card-body">
+				    <h5 class="card-title imghome">Lírio Amarelo Plantado<br><br></h5>
+				    <p class="card-text imghome">R$99,99</p>
+				    <a href="login.html" class="btn btn-light botoescompra">Comprar</a>
+				  </div>
+				</div>
+
+				<div class="card card1" style="width: 18rem;">
+				  <img src="florlirio10.jpg" class="card-img-top imgs">
+				  <div class="card-body">
+				    <h5 class="card-title imghome">Lírio Branco Plantado<br><br></h5>
+				    <p class="card-text imghome">R$99,99</p>
+				    <a href="login.html" class="btn btn-light botoescompra">Comprar</a>
+				  </div>
+				</div>
+
+				<div class="card card1" style="width: 18rem;">
+				  <img src="florlirio11.jpg" class="card-img-top imgs">
+				  <div class="card-body">
+				    <h5 class="card-title imghome">Jardim de Lírios Rosa<br><br></h5>
+				    <p class="card-text imghome">R$399,99</p>
+				    <a href="login.html" class="btn btn-light botoescompra">Comprar</a>
+				  </div>
+				</div>
+
+				<div class="card card1" style="width: 18rem;">
+				  <img src="florlirio12.jpg" class="card-img-top imgs">
+				  <div class="card-body">
+				    <h5 class="card-title imghome">Jardim de Lírios Laranja</h5>
+				    <p class="card-text imghome">R$399,99</p>
+				    <a href="login.html" class="btn btn-light botoescompra">Comprar</a>
+				  </div>
+				</div>
+				</div>
+			  </div>
+
+			  <div class="tab-pane fade" id="pills-orquidea" role="tabpanel" aria-labelledby="pills-orquidea-tab">
+			  	<div class="card-deck">
+				<div class="card card1" style="width: 18rem;">
+				  <img src="flororq1.jpg" class="card-img-top imgs">
+				  <div class="card-body">
+				    <h5 class="card-title imghome">Sofisticadas Phalaenopsis Rosa</h5>
+				    <p class="card-text imghome">R$199,99</p>
+				    <a href="login.html" class="btn btn-light  botoescompra">Comprar</a>
+				  </div>
+				</div>
+
+				<div class="card card1" style="width: 18rem;">
+				  <img src="flororq2.jpg" class="card-img-top imgs">
+				  <div class="card-body">
+				    <h5 class="card-title imghome">Sofisticadas Orquídeas Phalaenopsis</h5>
+				    <p class="card-text imghome">R$199,99</p>
+				    <a href="login.html" class="btn btn-light botoescompra">Comprar</a>
+				  </div>
+				</div>
+
+				<div class="card card1" style="width: 18rem;">
+				  <img src="flororq3.jpg" class="card-img-top imgs">
+				  <div class="card-body">
+				    <h5 class="card-title imghome">Mini Orquídea Rara Branca<br><br></h5>
+				    <p class="card-text imghome">R$89,99</p>
+				    <a href="login.html" class="btn btn-light botoescompra">Comprar</a>
+				  </div>
+				</div>
+
+				<div class="card card1" style="width: 18rem;">
+				  <img src="flororq4.jpg" class="card-img-top imgs">
+				  <div class="card-body">
+				    <h5 class="card-title imghome">Orquídea Chuva de Ouro<br><br></h5>
+				    <p class="card-text imghome">R$99,99</p>
+				    <a href="login.html" class="btn btn-light botoescompra">Comprar</a>
+				  </div>
+				</div>
+				</div>
+				<br>
+			  	<div class="card-deck">
+				<div class="card card1" style="width: 18rem;">
+				  <img src="flororq5.jpg" class="card-img-top imgs">
+				  <div class="card-body">
+				    <h5 class="card-title imghome">Orquídea Azul Presente<br><br></h5>
+				    <p class="card-text imghome">R$139,99</p>
+				    <a href="login.html" class="btn btn-light botoescompra">Comprar</a>
+				  </div>
+				</div>
+
+				<div class="card card1" style="width: 18rem;">
+				  <img src="flororq6.jpg" class="card-img-top imgs">
+				  <div class="card-body">
+				    <h5 class="card-title imghome">Orquídea Phalaenopsis Rosa Presente</h5>
+				    <p class="card-text imghome">R$79,99</p>
+				    <a href="login.html" class="btn btn-light botoescompra">Comprar</a>
+				  </div>
+				</div>
+
+				<div class="card card1" style="width: 18rem;">
+				  <img src="flororq7.jpg" class="card-img-top imgs">
+				  <div class="card-body">
+				    <h5 class="card-title imghome">Orquídea Phalaenopsis Branca Presente</h5>
+				    <p class="card-text imghome">R$79,99</p>
+				    <a href="login.html" class="btn btn-light botoescompra">Comprar</a>
+				  </div>
+				</div>
+
+				<div class="card card1" style="width: 18rem;">
+				  <img src="flororq8.jpg" class="card-img-top imgs">
+				  <div class="card-body">
+				    <h5 class="card-title imghome">Orquídea Phalaenopsis Amarela Presente</h5>
+				    <p class="card-text imghome">R$149,99</p>
+				    <a href="login.html" class="btn btn-light botoescompra">Comprar</a>
+				  </div>
+				</div>
+				</div>
+			  </div>
+
+			  <div class="tab-pane fade" id="pills-ramarela" role="tabpanel" aria-labelledby="pills-ramarela-tab">
+			  	<div class="card-deck">
+				<div class="card card1" style="width: 18rem;">
+				  <img src="florama1.jpg" class="card-img-top imgs">
+				  <div class="card-body">
+				    <h5 class="card-title imghome">Contagiar de Rosas Amarelas no Vaso</h5>
+				    <p class="card-text imghome">R$99,99</p>
+				    <a href="login.html" class="btn btn-light botoescompra">Comprar</a>
+				  </div>
+				</div>
+
+				<div class="card card1" style="width: 18rem;">
+				  <img src="florama2.jpg" class="card-img-top imgs">
+				  <div class="card-body">
+				    <h5 class="card-title imghome">Luxuosas 12 Rosas Amarelas no Vaso</h5>
+				    <p class="card-text imghome">R$199,99</p>
+				    <a href="login.html" class="btn btn-light botoescompra">Comprar</a>
+				  </div>
+				</div>
+
+				<div class="card card1" style="width: 18rem;">
+				  <img src="florama3.jpg" class="card-img-top imgs">
+				  <div class="card-body">
+				    <h5 class="card-title imghome">Magnífico Cone de Rosas Amarelas</h5>
+				    <p class="card-text imghome">R$89,99</p>
+				    <a href="login.html" class="btn btn-light botoescompra">Comprar</a>
+				  </div>
+				</div>
+
+				<div class="card card1" style="width: 18rem;">
+				  <img src="florama4.jpg" class="card-img-top imgs">
+				  <div class="card-body">
+				    <h5 class="card-title imghome">Elegância das Rosas Amarelas</h5>
+				    <p class="card-text imghome">R$99,99</p>
+				    <a href="login.html" class="btn btn-light botoescompra">Comprar</a>
+				  </div>
+				</div>
+				</div>
+				<br>
+			  	<div class="card-deck">
+				<div class="card card1" style="width: 18rem;">
+				  <img src="florama5.jpg" class="card-img-top imgs">
+				  <div class="card-body">
+				    <h5 class="card-title imghome">Surpresa de Rosas Amarelas no Vaso</h5>
+				    <p class="card-text imghome">R$139,99</p>
+				    <a href="login.html" class="btn btn-light botoescompra">Comprar</a>
+				  </div>
+				</div>
+
+				<div class="card card1" style="width: 18rem;">
+				  <img src="florama6.jpg" class="card-img-top imgs">
+				  <div class="card-body">
+				    <h5 class="card-title imghome">Rosa Encantada Amarela<br><br></h5>
+				    <p class="card-text imghome">R$129,99</p>
+				    <a href="login.html" class="btn btn-light botoescompra">Comprar</a>
+				  </div>
+				</div>
+
+				<div class="card card1" style="width: 18rem;">
+				  <img src="florama7.jpg" class="card-img-top imgs">
+				  <div class="card-body">
+				    <h5 class="card-title imghome">Brisa de Rosas Amarelas<br><br></h5>
+				    <p class="card-text imghome">R$99,99</p>
+				    <a href="login.html" class="btn btn-light botoescompra">Comprar</a>
+				  </div>
+				</div>
+
+				<div class="card card1" style="width: 18rem;">
+				  <img src="florama8.jpg" class="card-img-top imgs">
+				  <div class="card-body">
+				    <h5 class="card-title imghome">6 Rosas Amarelas no Vaso<br><br></h5>
+				    <p class="card-text imghome">R$119,99</p>
+				    <a href="login.html" class="btn btn-light botoescompra">Comprar</a>
+				  </div>
+				</div>
+				</div>
+				
+			  </div>
+
+			  <div class="tab-pane fade" id="pills-rbranca" role="tabpanel" aria-labelledby="pills-rbranca-tab">
+			  	<div class="card-deck">
+				<div class="card card1" style="width: 18rem;">
+				  <img src="florbranca1.jpg" class="card-img-top imgs">
+				  <div class="card-body">
+				    <h5 class="card-title imghome">Brisa de Rosas Branca</h5>
+				    <p class="card-text imghome">R$99,99</p>
+				    <a href="login.html" class="btn btn-light botoescompra">Comprar</a>
+				  </div>
+				</div>
+
+				<div class="card card1" style="width: 18rem;">
+				  <img src="florbranca2.jpg" class="card-img-top imgs">
+				  <div class="card-body">
+				    <h5 class="card-title imghome">Contagiar de Rosas Brancas no Vaso</h5>
+				    <p class="card-text imghome">R$159,99</p>
+				    <a href="login.html" class="btn btn-light botoescompra">Comprar</a>
+				  </div>
+				</div>
+
+				<div class="card card1" style="width: 18rem;">
+				  <img src="florbranca3.jpg" class="card-img-top imgs">
+				  <div class="card-body">
+				    <h5 class="card-title imghome">Cesta de 24 Rosas Brancas<br><br></h5>
+				    <p class="card-text imghome">R$189,99</p>
+				    <a href="login.html" class="btn btn-light botoescompra">Comprar</a>
+				  </div>
+				</div>
+
+				<div class="card card1" style="width: 18rem;">
+				  <img src="florbranca4.jpg" class="card-img-top imgs">
+				  <div class="card-body">
+				    <h5 class="card-title imghome">Soneto 36 Rosas Brancas no Vaso</h5>
+				    <p class="card-text imghome">R$299,99</p>
+				    <a href="login.html" class="btn btn-light botoescompra">Comprar</a>
+				  </div>
+				</div>
+				</div>
+				<br>
+			  	<div class="card-deck">
+				<div class="card card1" style="width: 18rem;">
+				  <img src="florbranca5.jpg" class="card-img-top imgs">
+				  <div class="card-body">
+				    <h5 class="card-title imghome">Magnífico Cone de Rosas Brancas</h5>
+				    <p class="card-text imghome">R$139,99</p>
+				    <a href="login.html" class="btn btn-light botoescompra">Comprar</a>
+				  </div>
+				</div>
+				<div class="card card1" style="width: 18rem;">
+				  <img src="florbranca6.jpg" class="card-img-top imgs">
+				  <div class="card-body">
+				    <h5 class="card-title imghome">Brilhantes Rosas Brancas no Vaso</h5>
+				    <p class="card-text imghome">R$239,99</p>
+				    <a href="login.html" class="btn btn-light botoescompra">Comprar</a>
+				  </div>
+				</div>
+
+				<div class="card card1" style="width: 18rem;">
+				  <img src="florbranca7.jpg" class="card-img-top imgs">
+				  <div class="card-body">
+				    <h5 class="card-title imghome">Rosa Encantada Branca<br><br></h5>
+				    <p class="card-text imghome">R$129,99</p>
+				    <a href="login.html" class="btn btn-light botoescompra">Comprar</a>
+				  </div>
+				</div>
+
+				<div class="card card1" style="width: 18rem;">
+				  <img src="florbranca8.jpg" class="card-img-top imgs">
+				  <div class="card-body">
+				    <h5 class="card-title imghome">Elegância das Rosas Brancas</h5>
+				    <p class="card-text imghome">R$119,99</p>
+				    <a href="login.html" class="btn btn-light botoescompra">Comprar</a>
+				  </div>
+				</div>
+				</div>
+				</div>
+
+			  <div class="tab-pane fade" id="pills-rrosa" role="tabpanel" aria-labelledby="pills-rrosa-tab">
+			  	<div class="card-deck">
+				<div class="card card1" style="width: 18rem;">
+				  <img src="florrosa1.jpg" class="card-img-top imgs">
+				  <div class="card-body">
+				    <h5 class="card-title imghome">Elegância das Rosas Cor de Rosa</h5>
+				    <p class="card-text imghome">R$129,99</p>
+				    <a href="login.html" class="btn btn-light botoescompra">Comprar</a>
+				  </div>
+				</div>
+
+				<div class="card card1" style="width: 18rem;">
+				  <img src="florrosa2.jpg" class="card-img-top imgs">
+				  <div class="card-body">
+				    <h5 class="card-title imghome">Magnífico Cone de Rosas Mescladas</h5>
+				    <p class="card-text imghome">R$99,99</p>
+				    <a href="login.html" class="btn btn-light botoescompra">Comprar</a>
+				  </div>
+				</div>
+
+				<div class="card card1" style="width: 18rem;">
+				  <img src="florrosa3.jpg" class="card-img-top imgs">
+				  <div class="card-body">
+				    <h5 class="card-title imghome">Rosa Encantada Box Rosa<br><br></h5>
+				    <p class="card-text imghome">R$129,99</p>
+				    <a href="login.html" class="btn btn-light botoescompra">Comprar</a>
+				  </div>
+				</div>
+
+				<div class="card card1" style="width: 18rem;">
+				  <img src="florrosa4.jpg" class="card-img-top imgs">
+				  <div class="card-body">
+				    <h5 class="card-title imghome">Mini Coração do Cupido</h5>
+				    <p class="card-text imghome">R$69,99</p>
+				    <a href="login.html" class="btn btn-light botoescompra">Comprar</a>
+				  </div>
+				</div>
+				</div>
+				<br>
+			  	<div class="card-deck">
+				<div class="card card1" style="width: 18rem;">
+				  <img src="florrosa5.jpg" class="card-img-top imgs">
+				  <div class="card-body">
+				    <h5 class="card-title imghome">Contagiar de Rosas Purple no Vaso</h5>
+				    <p class="card-text imghome">R$139,99</p>
+				    <a href="login.html" class="btn btn-light botoescompra">Comprar</a>
+				  </div>
+				</div>
+				<div class="card card1" style="width: 18rem;">
+				  <img src="florrosa6.jpg" class="card-img-top imgs">
+				  <div class="card-body">
+				    <h5 class="card-title imghome">Magnífico Cone de Rosas Pink</h5>
+				    <p class="card-text imghome">R$99,99</p>
+				    <a href="login.html" class="btn btn-light botoescompra">Comprar</a>
+				  </div>
+				</div>
+
+				<div class="card card1" style="width: 18rem;">
+				  <img src="florrosa7.jpg" class="card-img-top imgs">
+				  <div class="card-body">
+				    <h5 class="card-title imghome">Rosas Cor de Rosa no Vaso<br><br></h5>
+				    <p class="card-text imghome">R$199,99</p>
+				    <a href="login.html" class="btn btn-light botoescompra">Comprar</a>
+				  </div>
+				</div>
+
+				<div class="card card1" style="width: 18rem;">
+				  <img src="florrosa8.jpg" class="card-img-top imgs">
+				  <div class="card-body">
+				    <h5 class="card-title imghome">12 Rosas Cor de Rosa<br><br></h5>
+				    <p class="card-text imghome">R$119,99</p>
+				    <a href="login.html" class="btn btn-light botoescompra">Comprar</a>
+				  </div>
+				</div>
+				</div>
+			  </div>
+
+			  <div class="tab-pane fade" id="pills-rvermelha" role="tabpanel" aria-labelledby="pills-rvermelha-tab">
+			  	<div class="card-deck">
+				<div class="card card1" style="width: 18rem;">
+				  <img src="florver1.jpg" class="card-img-top imgs">
+				  <div class="card-body">
+				    <h5 class="card-title imghome">Arranjo 3 Rosas Vermelhas</h5>
+				    <p class="card-text imghome">R$79,99</p>
+				    <a href="login.html" class="btn btn-light botoescompra">Comprar</a>
+				  </div>
+				</div>
+
+				<div class="card card1" style="width: 18rem;">
+				  <img src="florver2.jpg" class="card-img-top imgs">
+				  <div class="card-body">
+				    <h5 class="card-title imghome">Magnífico Cone de Rosas Vermelhas</h5>
+				    <p class="card-text imghome">R$109,99</p>
+				    <a href="login.html" class="btn btn-light botoescompra">Comprar</a>
+				  </div>
+				</div>
+
+				<div class="card card1" style="width: 18rem;">
+				  <img src="florver3.jpg" class="card-img-top imgs">
+				  <div class="card-body">
+				    <h5 class="card-title imghome">Surpresa de Rosas Colombianas</h5>
+				    <p class="card-text imghome">R$119,99</p>
+				    <a href="login.html" class="btn btn-light botoescompra">Comprar</a>
+				  </div>
+				</div>
+
+				<div class="card card1" style="width: 18rem;">
+				  <img src="florver4.jpg" class="card-img-top imgs">
+				  <div class="card-body">
+				    <h5 class="card-title imghome">Majestoso de Rosas "Eu Te Amo"</h5>
+				    <p class="card-text imghome">R$99,99</p>
+				    <a href="login.html" class="btn btn-light botoescompra">Comprar</a>
+				  </div>
+				</div>
+				</div>
+				<br>
+			  	<div class="card-deck">
+				<div class="card card1" style="width: 18rem;">
+				  <img src="florver5.jpg" class="card-img-top imgs">
+				  <div class="card-body">
+				    <h5 class="card-title imghome">Cesta de 12 Rosas Vermelhas</h5>
+				    <p class="card-text imghome">R$139,99</p>
+				    <a href="login.html" class="btn btn-light botoescompra">Comprar</a>
+				  </div>
+				</div>
+
+				<div class="card card1" style="width: 18rem;">
+				  <img src="florver6.jpg" class="card-img-top imgs">
+				  <div class="card-body">
+				    <h5 class="card-title imghome">Mini Coração do Cupido Vermelho</h5>
+				    <p class="card-text imghome">R$59,99</p>
+				    <a href="login.html" class="btn btn-light botoescompra">Comprar</a>
+				  </div>
+				</div>
+
+				<div class="card card1" style="width: 18rem;">
+				  <img src="florver7.jpg" class="card-img-top imgs">
+				  <div class="card-body">
+				    <h5 class="card-title imghome">Brilhantes Rosas Vermelhas no Vaso</h5>
+				    <p class="card-text imghome">R$219,99</p>
+				    <a href="login.html" class="btn btn-light botoescompra">Comprar</a>
+				  </div>
+				</div>
+
+				<div class="card card1" style="width: 18rem;">
+				  <img src="florver8.jpg" class="card-img-top imgs">
+				  <div class="card-body">
+				    <h5 class="card-title imghome">Rosê Vermelho<br><br></h5>
+				    <p class="card-text imghome">R$49,99</p>
+				    <a href="login.html" class="btn btn-light botoescompra">Comprar</a>
+				  </div>
+				</div>
+				</div>
+				<br>
+				<div class="card-deck">
+				<div class="card card1" style="width: 18rem;">
+				  <img src="florver9.jpg" class="card-img-top imgs">
+				  <div class="card-body">
+				    <h5 class="card-title imghome">Elegância das Rosas Vermelhas</h5>
+				    <p class="card-text imghome">R$129,99</p>
+				    <a href="login.html" class="btn btn-light botoescompra">Comprar</a>
+				  </div>
+				</div>
+
+				<div class="card card1" style="width: 18rem;">
+				  <img src="florver10.jpg" class="card-img-top imgs">
+				  <div class="card-body">
+				    <h5 class="card-title imghome">Rosas Colombianas no Vaso</h5>
+				    <p class="card-text imghome">R$79,99</p>
+				    <a href="login.html" class="btn btn-light botoescompra">Comprar</a>
+				  </div>
+				</div>
+
+				<div class="card card1" style="width: 18rem;">
+				  <img src="florver11.jpg" class="card-img-top imgs">
+				  <div class="card-body">
+				    <h5 class="card-title imghome">Mimo com Rosa Vermelha</h5>
+				    <p class="card-text imghome">R$19,99<br><br></p>
+				    <a href="login.html" class="btn btn-light botoescompra">Comprar</a>
+				  </div>
+				</div>
+
+				<div class="card card1" style="width: 18rem;">
+				  <img src="florver12.jpg" class="card-img-top imgs">
+				  <div class="card-body">
+				    <h5 class="card-title imghome">Paixão de Rosas Vermelhas na Caixa</h5>
+				    <p class="card-text imghome">R$89,99</p>
+				    <a href="login.html" class="btn btn-light botoescompra">Comprar</a>
+				  </div>
+				</div>
+				</div>
+			  </div>
+
+			  <div class="tab-pane fade" id="pills-tulipas" role="tabpanel" aria-labelledby="pills-tulipas-tab">
+			  	<div class="card-deck">
+				<div class="card card1" style="width: 18rem;">
+				  <img src="flortulipas1.jpg" class="card-img-top imgs">
+				  <div class="card-body">
+				    <h5 class="card-title imghome">Tulipas Amarelas</h5>
+				    <p class="card-text imghome">R$149,99</p>
+				    <a href="login.html" class="btn btn-light botoescompra">Comprar</a>
+				  </div>
+				</div>
+
+				<div class="card card1" style="width: 18rem;">
+				  <img src="flortulipas2.jpg" class="card-img-top imgs">
+				  <div class="card-body">
+				    <h5 class="card-title imghome">Tulipas Cor de Rosa</h5>
+				    <p class="card-text imghome">R$149,99</p>
+				    <a href="login.html" class="btn btn-light botoescompra">Comprar</a>
+				  </div>
+				</div>
+
+				<div class="card card1" style="width: 18rem;">
+				  <img src="flortulipas3.jpg" class="card-img-top imgs">
+				  <div class="card-body">
+				    <h5 class="card-title imghome">Tulipas Coloridas</h5>
+				    <p class="card-text imghome">R$149,99</p>
+				    <a href="login.html" class="btn btn-light botoescompra">Comprar</a>
+				  </div>
+				</div>
+
+				<div class="card card1" style="width: 18rem;">
+				  <img src="flortulipas4.jpg" class="card-img-top imgs">
+				  <div class="card-body">
+				    <h5 class="card-title imghome">Tulipas Brancas</h5>
+				    <p class="card-text imghome">R$149,99</p>
+				    <a href="login.html" class="btn btn-light botoescompra">Comprar</a>
+				  </div>
+				</div>
+				</div>
+				<br>
+			  	
+				<div class="card card1" style="width: 16rem;">
+				  <img src="flortulipas5.jpg" class="card-img-top imgs">
+				  <div class="card-body">
+				    <h5 class="card-title imghome" >Tulipas Vermelhas</h5>
+				    <p class="card-text imghome">R$149,99</p>
+				    <a href="login.html" class="btn btn-light botoescompra">Comprar</a>
+				  </div>
+				</div>
+				
+			  </div>
+
+			</div>
+		<br><br>
+		</div>
+		<nav class="navbar navbar-expand-lg fimpag">
+			<div class="collapse navbar-collapse">
+				<div class="contatos">
+    				<ol class="nav-item">
+    					<h5>Contatos</h5>
+    				</ol>
+    				<ol class="nav-item">
+    					<p>(11) 4002-8922</p>
+    				</ol>
+    				<ol>
+    					<p>Rua Lauro Gomes, 506 <br> São Bernardo do Campo, SP</p>
+    				</ol>
+    				<ol>
+    					<p>hibiscocontato@gmail.com</p>
+    				</ol>
+    		</div>
+    		<div class="rsociais">
+    			<ol>
+    				<h5>Redes Sociais</h5>
+    			</ol>
+    			<ol>
+    				<ul class="navbar-nav">
+    				<img src="instagramlogo.png" width="40" height="40">
+    				<ul>
+    				<p>@hibiscoflores</p>
+    			</ol>
+    			<ol>
+    				<ul class="navbar-nav">
+    				<img src="facebooklogo.png" width="40" height="40">
+    				<ul>
+    				<p>Hibisco Flores</p>
+    			</ol>
+    		</div>
+    		<div class="fpag">
+    			
+    			<ol class="nav-item">
+    				<h5>Formas de Pagamento</h5>
+    			</ol>
+    			<ul class="navbar-nav">
+    			<ol class="nav-item">
+    				<img src="paypallogo.png" width="40" height="30">
+    			</ol>
+    			<ol class="nav-item">
+    				<img src="elologo.png" width="80" height="30">
+    			</ol>
+    			<ol class="nav-item">
+    				<img src="visalogo.png" width="110" height="30">
+    			</ol>
+    			<ul>
+    		</div>
+  			</div>
+		</nav>		
+	</body>
+</html>
